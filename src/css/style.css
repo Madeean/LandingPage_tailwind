@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    
+}
+.scroll-header{
+    box-shadow: 0 4px 4px hsl(0,0%,4%,.3);
+    
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.preloader{
+    top: 0;
+    left: 0;
+    background: lightgrey;
+    height: 100%;
+    width: 100%;
+    position: fixed;    
+    z-index: 999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.disppear{
+    animation: vanish 2s forwards;
+}
+
+@keyframes vanish{
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}

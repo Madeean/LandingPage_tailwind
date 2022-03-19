@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Madee</title>
+    <link rel="stylesheet" href="../out/output.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <div class="preloader">
+        <img src="./img/72804-power-sticker-unscreen.gif" alt="" class="w-64">
+    </div>
+
+    <div >
+        <nav class="p-5  rounded header bg-white duration-300
+            md:flex md:items-center md:justify-between" id="header">
+            <div class="flex justify-between items-center ">
+                <a href="#html" class="text-3xl font-semibold text-purple-500 duration-200 cursor-pointer ml-12
+                hover:text-blue-500 ">Madee</a>
+        
+                <span class="text-3xl cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+
+            </div>
+    
+            <ul class="z-[1] absolute bg-white w-full left-0 opacity-0 top-[-400px] transition-all ease-in duration-300 mr-12 
+            md:flex md:items-center  md:z-auto md:static  md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100" id="ul-header">
+
+                <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer 
+                hover:border-purple-300 hover:pb-2 hover:text-purple-200">
+                    <a href="#AboutMe" class="text-xl">About Me</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
+                hover:border-purple-300 hover:pb-2 hover:text-purple-200">
+                    <a href="#" class="text-xl">Skills</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
+                hover:border-purple-300 hover:pb-2 hover:text-purple-200">
+                    <a href="#" class="text-xl">Projects</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
+                hover:border-purple-300 hover:pb-2 hover:text-purple-200">
+                    <a href="#" class="text-xl">Contact</a>
+                </li>
+                
+        
+                <h2 class=""></h2>
+            </ul>
+        </nav>
+
+        
+
+        <div class="flex flex-col justify-between mt-32 px-16 ml-5 mr-5 items-start
+        sm:flex-row  sm:items-center">
+            
+            <div class="mb-16">
+                <h1 class="text-2xl   sm:text-5xl ">Hi! I Am </h1>
+                <h1 class="text-3xl   sm:text-6xl py-4 font-semibold ">Made Reihan Diva Suarna</h1>
+                <h1 class="text-xl">Seorang mahasiswa semester 4 universitas multimedia nusantara</h1>
+                <a download="" href="" class="font-semibold text-white bg-gradient-to-r from-purple-700 to-purple-300 rounded-lg px-5 py-3 mt-3 cursor-pointer border-none outline-none inline-block">
+                    Download CV
+                </a>
+            </div>
+            
+            <div class="relative flex justify-end items-center">
+                <!-- <img src="./img/business-3d-answer.png" alt="" class="w-4/6"> -->
+                <div id="anim"></div>
+            </div>
+
+        </div>
+
+        <div class=" mt-32 px-16 ml-5 mr-5">
+            <h1 class="text-4xl font-normal text-center" id="AboutMe">About Me</h1>
+            <div class="grid grid-cols-12 lg:gap-10 xl:gap-20 mt-10">
+                <div class="col-span-12 flex flex-col justify-center items-center lg:col-start-2 lg:col-span-5  roundeed-2xl p-9 text-black hover:text-purple duration-300 cursor-pointer">
+                    <img class="h-80" src="./img/business-3d-answer.png" alt="">
+                </div>
+                <div class="col-span-12 lg:col-span-5  roundeed-2xl p-9 text-black hover:text-purple duration-300 cursor-pointer ">
+                    <div class="text-center mt-8">
+                        <div class="grid grid-cols-3 gap-2 mb-8">
+                            <div class="bg-cyan-400 rounded-xl py-3 px-2">
+                                <i class="bx bx-award about__icon"></i>
+                                <h3 class="text-sm">Experience</h3>
+                                <span class="text-base">Fresh Graduate</span>
+                            </div>
+
+                            <div class="bg-cyan-400 rounded-xl py-3 px-2">
+                                <i class="bx bx-briefcase-alt about__icon"></i>
+                                <h3 class="text-sm">Completed</h3>
+                                <span class="text-base">10 + Projects</span>
+                            </div>
+
+                            <div class="bg-cyan-400 rounded-xl py-3 px-2">
+                                <i class="bx bx-support about__icon"></i>
+                                <h3 class="text-sm">Support</h3>
+                                <span class="text-base">Online 24/7</span>
+                            </div>
+                        </div>
+
+                        <p class="mb-8 flex justify-start">
+                            Backend Developer, I create web pages with Laravel, ExpressJs , blablabalbla
+                        </p>
+
+                    </div>
+                    
+                    <a  href="#" class="font-medium text-white bg-gradient-to-r from-purple-700 to-purple-300 rounded-lg px-3 py-4  cursor-pointer border-none outline-none inline-block 
+                    hover:bg-gradient-to-r hover:from-purple-300 hover:to-purple-700">
+                        Contact Me
+                    </a>
+
+                </div>
+                
+            </div>
+        </div>
+        <br><br><br><br>
+
+    </div>
+      
+      
+    <script src ="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js"></script>
+    <script src="js/index.js"></script>
+    
+</body>
+</html>

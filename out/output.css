@@ -707,6 +707,18 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: max-content;
 }
 
+.w-96 {
+  width: 24rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-4\/5 {
+  width: 80%;
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }
@@ -1071,22 +1083,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-offset: 2px;
 }
 
-.transition-all {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
-}
-
-.duration-300 {
-  transition-duration: 300ms;
-}
-
 .duration-200 {
   transition-duration: 200ms;
 }
 
-.duration-150 {
-  transition-duration: 150ms;
+.duration-300 {
+  transition-duration: 300ms;
 }
 
 .ease-in {
@@ -1196,14 +1198,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(11 17 30 / var(--tw-bg-opacity));
 }
 
-.dark .dark\:bg-dakitih {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 242 244 / var(--tw-bg-opacity));
-}
-
 .dark .dark\:bg-dakibu {
   --tw-bg-opacity: 1;
   background-color: rgb(21 28 40 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dakitih {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 242 244 / var(--tw-bg-opacity));
 }
 
 .dark .dark\:text-dakitih {

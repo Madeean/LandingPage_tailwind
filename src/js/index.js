@@ -114,7 +114,7 @@ VanillaTilt.init(document.querySelectorAll(".work__card"), {
 // smtp
 function sendEmail(){
   Email.send({
-    SecureToken: "0ef746d7-34c8-4956-99a4-e23f1676e374",
+    SecureToken: "8c3a5327-4a7f-4a64-a0a1-0c431b9a0755",
     To : 'madereihan26@gmail.com',
     From : document.getElementById("email").value,
     Subject : "new value from contact form portfolio website",

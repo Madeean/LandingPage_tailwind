@@ -12,47 +12,51 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
-<body>
+<body class="dark:bg-dakitam">
 
     <div class="preloader">
         <img src="./src/img/72804-power-sticker-unscreen.gif" alt="" class="w-64">
     </div>
 
     <div >
-        <nav class="p-5  rounded header bg-white duration-300
+        <nav class="p-5  rounded header bg-white  dark:bg-dakitam
             md:flex md:items-center md:justify-between" id="header">
             <div class="flex justify-between items-center ">
-                <a href="#html" class="text-3xl font-semibold text-purple-500 duration-200 cursor-pointer ml-12
-                hover:text-blue-500 ">Madee</a>
+                <a href="#html" class="text-3xl font-semibold text-blue-400 duration-200 cursor-pointer ml-12
+                 ">Madee</a>
         
                 <span class="text-3xl cursor-pointer mx-2 md:hidden block">
-                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                    <ion-icon name="menu" onclick="Menu(this)" class="dark:text-dakitih"></ion-icon>
                 </span>
 
             </div>
     
-            <ul class="z-[1] absolute bg-white w-full left-0 opacity-0 top-[-400px] transition-all ease-in duration-300 mr-12 
+            <ul class="z-[1] absolute bg-white w-full left-0 opacity-0 top-[-400px]  ease-in  mr-12  dark:bg-dakitam
             md:flex md:items-center  md:z-auto md:static  md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100" id="ul-header">
 
-                <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer 
-                hover:border-purple-300 hover:pb-2 hover:text-purple-200">
-                    <a href="#AboutMe" class="text-xl">About Me</a>
+                <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent  cursor-pointer dark:text-dakitih dark:hover:text-blue-400 duration-300
+                hover:border-purple-400 hover:pb-2 hover:text-blue-400">
+                    <a href="#AboutMe" class="text-xl ">About Me</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
-                hover:border-purple-300 hover:pb-2 hover:text-purple-200">
+                dark:text-dakitih dark:hover:text-blue-400
+                hover:border-purple-400 hover:pb-2 hover:text-blue-400">
                     <a href="#MySkills" class="text-xl">Skills</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
-                hover:border-purple-300 hover:pb-2 hover:text-purple-200">
+                dark:text-dakitih dark:hover:text-blue-400
+                hover:border-purple-400 hover:pb-2 hover:text-blue-400">
                     <a href="#Projects" class="text-xl">Projects</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
-                hover:border-purple-300 hover:pb-2 hover:text-purple-200">
+                dark:text-dakitih dark:hover:text-blue-400
+                hover:border-purple-400 hover:pb-2 hover:text-blue-400">
                     <a href="#Contact" class="text-xl">Contact</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
-                hover:border-purple-300 hover:pb-2 hover:text-purple-200">
-                    <i class='bx bxs-moon'></i>
+                dark:text-dakitih dark:hover:text-blue-400
+                ">
+                    <i class='bx bxs-moon hover:text-blue-400' id="toggle"></i>
                 </li>
                 
         
@@ -65,11 +69,12 @@
         <div class="flex flex-col justify-between mt-32 px-16 ml-5 mr-5 items-start
         sm:flex-row  sm:items-center">
             
-            <div class="mb-16">
+            <div class="mb-16 dark:text-dakitih ">
                 <h1 class="text-2xl   sm:text-5xl ">Hi! I Am </h1>
                 <h1 class="text-3xl   sm:text-6xl py-4 font-semibold ">Made Reihan Diva Suarna</h1>
                 <h1 class="text-xl">Mahasiswa semester 4 universitas multimedia nusantara</h1>
-                <a download="" href="" class="font-semibold text-white bg-gradient-to-r from-purple-700 to-purple-300 rounded-lg px-5 py-3 mt-3 cursor-pointer border-none outline-none inline-block">
+                <a download="" href="" class="font-semibold text-white bg-blue-400 rounded-lg px-5 py-3 mt-3 cursor-pointer border-none outline-none inline-block
+                dark:text-dakitam">
                     Download CV
                 </a>
             </div>
@@ -82,42 +87,47 @@
         </div>
 
         <div class=" mt-32 px-16 ml-5 mr-5">
-            <h1 class="text-2xl   text-center
-            md:text-4xl font-medium" id="AboutMe">About Me</h1>
-            <div class="grid grid-cols-12 lg:gap-10 xl:gap-20 mt-10">
+            <h1 class="text-2xl   text-center font-medium
+            md:text-4xl 
+            dark:text-blue-400" id="AboutMe">About Me</h1>
+            <div class="grid grid-cols-12 lg:gap-10 xl:gap-20 mt-10 
+                        ">
                 <div class="col-span-12 flex flex-col justify-center items-center lg:col-start-2 lg:col-span-5  roundeed-2xl p-9 text-black hover:text-purple duration-300 cursor-pointer">
                     <img class="h-80" src="./src/img/business-3d-answer.png" alt="">
                 </div>
                 <div class="col-span-12 lg:col-span-5  roundeed-2xl p-9 text-black hover:text-purple duration-300 cursor-pointer ">
-                    <div class="text-center mt-8">
-                        <div class="grid grid-cols-3 gap-2 mb-8">
-                            <div class="bg-slate-100 shadow-card rounded-xl py-3 px-2">
-                                <i class="bx bx-award text-2xl mb-2"></i>
-                                <h3 class="text-sm">Experience</h3>
-                                <span class="text-base">Fresh Graduate</span>
+                    <div class="text-center mt-8 
+                            dark:text-dakitih ">
+                        <div class="grid grid-cols-3 gap-8 mb-8 ">
+                            <div class=" shadow-card rounded-xl py-3 px-2 dark:bg-dakibu">
+                                <i class="bx bx-briefcase-alt text-2xl mb-2 text-blue-400"></i>
+                                <h3 class="text-sm font-bold">Work Experience</h3>
+                                <span class="text-base" id="work_experience">Fresh Graduate</span>
                             </div>
 
-                            <div class="bg-slate-100 shadow-card rounded-xl py-3 px-2">
-                                <i class="bx bx-briefcase-alt text-2xl mb-2"></i>
-                                <h3 class="text-sm">Completed</h3>
-                                <span class="text-base">10 + Projects</span>
+                            <div class=" shadow-card rounded-xl py-3 px-2 dark:bg-dakibu">
+                                <i class="bx bx-code text-2xl mb-2 text-blue-400"></i>
+                                <h3 class="text-sm font-bold">Completed</h3>
+                                <span class="text-base" id="completed_project">10+ Projects</span>
                             </div>
 
-                            <div class="bg-slate-100 shadow-card rounded-xl py-3 px-2">
-                                <i class="bx bx-support text-2xl mb-2"></i>
-                                <h3 class="text-sm">Support</h3>
-                                <span class="text-base">Online 24/7</span>
+                            <div class=" shadow-card rounded-xl py-3 px-2 dark:bg-dakibu">
+                                <i class="bx bx-award text-2xl mb-2 text-blue-400"></i>
+                                <h3 class="text-sm font-bold">Years Experience</h3>
+                                <span class="text-base" id="years_experience">04+ Years</span>
                             </div>
                         </div>
 
-                        <p class="mb-8 text-left">
+                        <p class="mb-8 text-left 
+                                ">
                             Backend Developer, I create web pages with Laravel, ExpressJs , blablabalbla
                         </p>
 
                     </div>
                     
-                    <a  href="#" class="font-medium text-white bg-gradient-to-r from-purple-700 to-purple-300 rounded-lg px-3 py-4  cursor-pointer border-none outline-none inline-block 
-                    hover:bg-gradient-to-r hover:from-purple-300 hover:to-purple-700">
+                    <a  href="#" class="font-semibold text-white bg-blue-400 rounded-lg px-3 py-4  cursor-pointer border-none outline-none inline-block 
+                    dark:text-dakitam
+                    ">
                         Contact Me
                     </a>
 
@@ -128,10 +138,12 @@
         
         <div class="mt-32 px-16 ml-5 mr-5">
             <h1 class="text-3xl font-medium text-center
-            md:text-4xl" id="MySkills">My Skills</h1>
+            md:text-4xl
+            dark:text-blue-400" id="MySkills">My Skills</h1>
             <h1 class="text-2xl font-normal text-center mt-14 mb-8
-            md:text-3xl">Tehchnologies & tools I work with </h1>
-            <div class="grid gap-8 grid-cols-4 ml-auto mr-auto pt-20 pb-20 w-9/12 place-items-center  shadow-card loaalala">
+            md:text-3xl
+            dark:text-dakitih">Tehchnologies & tools I work with </h1>
+            <div class="grid gap-8 grid-cols-4 ml-auto mr-auto pt-20 pb-20 w-9/12 place-items-center  shadow-card loaalala dark:text-dakitih">
                 <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class=" draggable align-middle w-20 h-20 inline-block text-xs shrink-0">
                         <path d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"/>
@@ -375,7 +387,7 @@
                 </div>
                 <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
                     <svg
-                        class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0"
+                        class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0 dark:bg-dakitih"
                         xmlns:dc="http://purl.org/dc/elements/1.1/"
                         xmlns:cc="http://creativecommons.org/ns#"
                         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -461,8 +473,9 @@
                         </svg>
                     <p class="text-center text-base mt-2">Express JS</p>
                 </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" width="207px" height="124px" viewBox="0 0 207 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <div class="flex items-center justify-center flex-col w-32 h-32"  data-tilt data-tilt-max="30">
+                    <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0
+                    dark:bg-dakitih" width="207px" height="124px" viewBox="0 0 207 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                         <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
                         <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                             <g id="Black-Next.js" transform="translate(-247.000000, -138.000000)" fill="#000000" fill-rule="nonzero">
@@ -485,71 +498,77 @@
 
         <div class="mt-32 px-16 ml-5 mr-5">
             <h1 class="text-3xl font-medium text-center
-            md:text-4xl" id="Projects">Projects</h1>
-            <div class="flex justify-center items-center gap-x-3 mb-8 mt-16">
+            md:text-4xl
+            dark:text-blue-400" id="Projects">Projects</h1>
+            <div class="flex justify-center items-center gap-x-3 mb-8 mt-16 ">
 
-                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item active-work" data-filter="all">All</span>
+                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item active-work dark:text-dakitih" data-filter="all">All</span>
 
-                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item"data-filter=".Back_end">Back End</span>
+                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item dark:text-dakitih"data-filter=".Back_end">Back End</span>
 
-                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item"data-filter=".Front_end">Front End</span>
+                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item dark:text-dakitih"data-filter=".Front_end">Front End</span>
 
-                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item"data-filter=".UIUX">UI/UX</span>
+                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item dark:text-dakitih"data-filter=".UIUX">UI/UX</span>
 
             </div>
 
-            <div class="pt-4 gap-12 grid grid-cols-3 work__container">
+            <div class="pt-4 gap-12 grid grid-cols-3 work__container ">
 
-                <div class="bg-white p-4 rounded-2xl mix Back_end shadow-card work__card">
+                <div class="bg-white  p-4 rounded-2xl mix Back_end shadow-card work__card
+                dark:bg-dakibu dark:text-dakitih">
                     <img src="src/img/work1.jpg" alt="" class="rounded-2xl mb-3 w-80 work__img">
 
                     <h3 class="text-lg font-medium mb-1 work__name">Back End</h3>
 
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo">
+                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
                         Demo <i class="bx bx-right-arrow-alt text-base duration-300
-                        hover:translate-x-1"></i>
+                        group-hover:translate-x-1"></i>
                     </a>
                 </div>
 
-                <div class="bg-white p-4 rounded-2xl mix Front_end shadow-card work__card">
+                <div class="bg-white p-4 rounded-2xl mix Front_end shadow-card work__card
+                dark:bg-dakibu dark:text-dakitih">
                     <img src="src/img/work2.jpg" alt="" class="rounded-2xl mb-3 w-80 work__img">
 
                     <h3 class="text-lg font-medium mb-1 work__name">Front End</h3>
 
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo">
+                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
                         Demo <i class="bx bx-right-arrow-alt text-base duration-300
-                        hover:translate-x-1"></i>
+                        group-hover:translate-x-1"></i>
                     </a>
                 </div>
 
-                <div class="bg-white p-4 rounded-2xl mix UIUX shadow-card work__card">
+                <div class="bg-white p-4 rounded-2xl mix UIUX shadow-card work__card
+                dark:bg-dakibu dark:text-dakitih">
                     <img src="src/img/work3.jpg" alt="" class="rounded-2xl mb-3 w-80 work__img">
 
                     <h3 class="text-lg font-medium mb-1 work__name">UI/UX</h3>
 
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo">
+                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
                         Demo <i class="bx bx-right-arrow-alt text-base duration-300
-                        hover:translate-x-1"></i>
+                        group-hover:translate-x-1"></i>
                     </a>
                 </div>
 
-                <div class="bg-white p-4 rounded-2xl mix Back_end shadow-card work__card">
+                <div class="bg-white p-4 rounded-2xl mix Back_end shadow-card work__card
+                dark:bg-dakibu dark:text-dakitih">
                     <img src="src/img/work4.jpg" alt="" class="rounded-2xl mb-3 w-80 work__img">
 
                     <h3 class="text-lg font-medium mb-1 work__name">Back End</h3>
 
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo">
+                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
                         Demo <i class="bx bx-right-arrow-alt text-base duration-300
-                        hover:translate-x-1"></i>
+                        group-hover:translate-x-1"></i>
                     </a>
                 </div>
 
-                <div class="bg-white p-4 rounded-2xl mix Front_end shadow-card work__card">
+                <div class="bg-white p-4 rounded-2xl mix Front_end shadow-card work__card
+                dark:bg-dakibu dark:text-dakitih">
                     <img src="src/img/work5.jpg" alt="" class="rounded-2xl mb-3 w-80 work__img">
 
                     <h3 class="text-lg font-medium mb-1 work__name">Front End</h3>
 
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo">
+                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group ">
                         Demo <i class="bx bx-right-arrow-alt text-base duration-300
                         hover:translate-x-1"></i>
                     </a>
@@ -563,54 +582,56 @@
         
         <div class="mt-32 px-16 ml-16 mr-16">
             <h1 class="text-3xl font-medium text-center
-            md:text-4xl" id="Contact">Contact</h1>
+            md:text-4xl
+            dark:text-blue-400" id="Contact">Contact</h1>
 
             <div class="grid gap-y-12 pb-12 grid-cols-2 justify-center gap-x-12 mt-12">
                 
-                <div class="contact__content">
+                <div class="contact__content dark:text-dakitih">
                     <h1 class="text-center text-lg mb-6 font-medium">Talk To Me</h1>
 
                     <div class="grid gap-4 justify-center contact__info">
 
-                        <div class="shadow-card p-4 rounded-xl text-center mt-8">
-                            <i class="bx bx-mail-send text-3xl text-black"></i>
+                        <div class="shadow-card p-4 rounded-xl text-center mt-8 
+                                    dark:bg-dakibu">
+                            <i class="bx bx-mail-send text-3xl text-black dark:text-dakitih"></i>
                             <h3 class="text-sm font-medium">Email</h3>
                             <span class="text-sm block mb-3">madereihan26@gmail.com</span>
 
-                            <a href="#" target="_blank" class="text-blue-500 font-normal flex items-center content-center gap-x-1">Write Me <i class="bx bx-right-arrow-alt text-base duration-300 hover:translate-x-1"></i></a>
+                            <a href="#" target="_blank" class="text-blue-500 font-normal flex items-center content-center gap-x-1 group">Write Me <i class="bx bx-right-arrow-alt text-base duration-300  group-hover:translate-x-1"></i></a>
                         </div>
 
-                        <div class="shadow-card p-4 rounded-xl text-center mt-8">
-                            <i class="bx bx-mail-send text-3xl text-black"></i>
+                        <div class="shadow-card p-4 rounded-xl text-center mt-8 dark:bg-dakibu">
+                            <i class="bx bx-mail-send text-3xl text-black dark:text-dakitih"></i>
                             <h3 class="text-sm font-medium">WhatsApp</h3>
                             <span class="text-sm block mb-3">012345678</span>
 
-                            <a href="#" target="_blank" class="text-blue-500 font-normal flex items-center content-center gap-x-1">Write Me <i class="bx bx-right-arrow-alt text-base duration-300 hover:translate-x-1"></i></a>
+                            <a href="#" target="_blank" class="text-blue-500 font-normal flex items-center content-center gap-x-1 group">Write Me <i class="bx bx-right-arrow-alt text-base duration-300 group-hover:translate-x-1"></i></a>
                         </div>
 
                     </div>
 
                 </div>
 
-                <div class="contact__content ">
+                <div class="contact__content dark:text-dakitih">
 
                     <h1 class="text-center text-lg mb-6 font-medium">Write Me Your project</h1>
 
                     <form  class="w-80 my-0 mx-auto " onsubmit="sendEmail(); reset(); return false;">
                         <div class="relative mb-8 h-16">
-                            <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10">Name</label>
-                            <input type="text" placeholder="Insert Your Name" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl" style="z-index: 1;" id="name">
+                            <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10 dark:bg-dakitam">Name</label>
+                            <input type="text" placeholder="Insert Your Name" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl dark:bg-dakitam" style="z-index: 1;" id="name">
                         </div>
                         <div class="relative mb-8 h-16">
-                            <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10">Email</label>
-                            <input type="email" placeholder="Insert Your Email" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl" style="z-index: 1;" id="email">
+                            <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10 dark:bg-dakitam">Email</label>
+                            <input type="email" placeholder="Insert Your Email" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl dark:bg-dakitam" style="z-index: 1;" id="email" required>
                         </div>
                         <div class="relative mb-8 h-44 ">
-                            <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10">Message</label>
-                            <textarea name="" id="message" cols="30" rows="10" placeholder="Write your Message" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl" style="z-index: 1;"></textarea>
+                            <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10 dark:bg-dakitam">Message</label>
+                            <textarea name="" id="message" cols="30" rows="10" placeholder="Write your Message" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl dark:bg-dakitam" style="z-index: 1;"></textarea>
                             
                         </div>
-                        <button class="font-semibold text-white bg-gradient-to-r from-purple-700 to-purple-300 rounded-lg px-5 py-3 mt-3 cursor-pointer border-none outline-none inline-block">Send Messages</button>
+                        <button class="font-semibold text-white bg-blue-400 rounded-lg px-5 py-3 mt-3 cursor-pointer border-none outline-none inline-block dark:text-dakitam">Send Messages</button>
                     </form>
 
                 </div>
@@ -618,7 +639,7 @@
             </div>
         </div>
 
-        <footer class="bg-blue-300">
+        <footer class="bg-blue-400">
 
             <div class="mt-32 pt-8 px-0 pb-24 ml-16 mr-16 ">
                 <h1 class="text-black text-center mb-8 text-5xl font-semibold">Madee</h1>
@@ -662,6 +683,22 @@
         let list = document.querySelector('ul');
         e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))
     }
+
+    const taugle = document.querySelector('#toggle');
+    const html = document.querySelector('html');
+    taugle.addEventListener('click',function(){
+        if(taugle.classList.contains('bxs-moon')){
+            html.classList.add('dark');
+            taugle.classList.remove('bxs-moon');
+            taugle.classList.add('bxs-sun');
+            console.log('dark');
+        }else if(taugle.classList.contains('bxs-sun')){
+            html.classList.remove('dark');
+            taugle.classList.remove('bxs-sun');
+            taugle.classList.add('bxs-moon');
+            console.log('light');
+        }
+    })
     </script>
     
 </body>

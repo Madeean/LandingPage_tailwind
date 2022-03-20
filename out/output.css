@@ -767,10 +767,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   justify-content: space-between;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
 .gap-8 {
   gap: 2rem;
 }
@@ -861,14 +857,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-slate-100 {
+.bg-blue-400 {
   --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-.bg-blue-300 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(147 197 253 / var(--tw-bg-opacity));
+  background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
 .bg-black {
@@ -876,21 +867,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(0 0 0 / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
 .bg-none {
   background-image: none;
-}
-
-.from-purple-700 {
-  --tw-gradient-from: #7e22ce;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(126 34 206 / 0));
-}
-
-.to-purple-300 {
-  --tw-gradient-to: #d8b4fe;
 }
 
 .p-5 {
@@ -1041,13 +1019,17 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 500;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-normal {
   font-weight: 400;
 }
 
-.text-purple-500 {
+.text-blue-400 {
   --tw-text-opacity: 1;
-  color: rgb(168 85 247 / var(--tw-text-opacity));
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1058,11 +1040,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-black {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
-.text-blue-400 {
-  --tw-text-opacity: 1;
-  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 .text-blue-500 {
@@ -1106,6 +1083,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-200 {
   transition-duration: 200ms;
+}
+
+.duration-150 {
+  transition-duration: 150ms;
 }
 
 .ease-in {
@@ -1191,36 +1172,58 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
-.hover\:border-purple-300:hover {
+.hover\:border-purple-400:hover {
   --tw-border-opacity: 1;
-  border-color: rgb(216 180 254 / var(--tw-border-opacity));
-}
-
-.hover\:bg-gradient-to-r:hover {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.hover\:from-purple-300:hover {
-  --tw-gradient-from: #d8b4fe;
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(216 180 254 / 0));
-}
-
-.hover\:to-purple-700:hover {
-  --tw-gradient-to: #7e22ce;
+  border-color: rgb(192 132 252 / var(--tw-border-opacity));
 }
 
 .hover\:pb-2:hover {
   padding-bottom: 0.5rem;
 }
 
-.hover\:text-blue-500:hover {
+.hover\:text-blue-400:hover {
   --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
-.hover\:text-purple-200:hover {
+.group:hover .group-hover\:translate-x-1 {
+  --tw-translate-x: 0.25rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.dark .dark\:bg-dakitam {
+  --tw-bg-opacity: 1;
+  background-color: rgb(11 17 30 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dakitih {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 242 244 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:bg-dakibu {
+  --tw-bg-opacity: 1;
+  background-color: rgb(21 28 40 / var(--tw-bg-opacity));
+}
+
+.dark .dark\:text-dakitih {
   --tw-text-opacity: 1;
-  color: rgb(233 213 255 / var(--tw-text-opacity));
+  color: rgb(240 242 244 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-dakitam {
+  --tw-text-opacity: 1;
+  color: rgb(11 17 30 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-blue-400 {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
+}
+
+.dark .dark\:hover\:text-blue-400:hover {
+  --tw-text-opacity: 1;
+  color: rgb(96 165 250 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {

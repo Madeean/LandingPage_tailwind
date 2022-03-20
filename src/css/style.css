@@ -22,7 +22,18 @@
     color: black;
 }
 
-
+.work__card{
+    transform-style: preserve-3d;
+}
+.work__name{
+    transform: translate3d(0,0,15px);
+}
+.work__img{
+    transform: translate3d(0,0,30px);
+}
+.work__demo{
+    transform: translate3d(0,0,10px);
+}
 
 
 
@@ -45,7 +56,7 @@
 }
 
 .disppear{
-    animation: vanish 2s forwards;
+    animation: vanish 1s forwards;
 }
 
 @keyframes vanish{
@@ -53,4 +64,8 @@
         opacity: 0;
         visibility: hidden;
     }
+}
+
+.contact__info{
+    grid-template-columns: 300px;
 }

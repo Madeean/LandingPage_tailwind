@@ -102,3 +102,27 @@ function activeWork(){
 }
 
 linkWork.forEach(l=>l.addEventListener('click',activeWork))
+
+
+// tilt js
+VanillaTilt.init(document.querySelectorAll(".work__card"), {
+  max: 25,
+  speed: 400
+});
+
+
+// smtp
+function sendEmail(){
+  Email.send({
+    Host : "smtp.gmail.com",
+    Username : "rustuva26@gmail.com",
+    Password : "reihan26",
+    To : 'madereihan26@gmail.com',
+    From : document.getElementById("email").value,
+    Subject : "new value from contact form portfolio website",
+    Body : "dawdadasdaw"
+  }).then(
+  message => alert(message)
+  );
+}
+

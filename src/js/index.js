@@ -124,11 +124,14 @@ function sendEmail(){
             Email: ${document.getElementById("email").value} <br>
             Message: ${document.getElementById("message").value}`
   }).then(
-  message => Toastify({
-    text: `${message}`,
-    className: "success",
-  }).showToast()
+    message => Toastify({
+      text: `${message} Message Terikirim`,
+      duration: 2000,
+      className: "success",
+      style: {
+        background: "linear-gradient(to right, #00b09b, #96c93d)",
+      },
+    }).showToast()
   );
-  console.log(document.getElementById("email").value)
 }
 

@@ -114,13 +114,16 @@ VanillaTilt.init(document.querySelectorAll(".work__card"), {
 // smtp
 function sendEmail(){
   Email.send({
-    SecureToken: "8c3a5327-4a7f-4a64-a0a1-0c431b9a0755",
+    Host : "smtp.mailtrap.io",
+    Username : "04ccf795e33725",
+    Password : "a96b8f6bd127ea",
     To : 'madereihan26@gmail.com',
-    From : document.getElementById("email").value,
+    From : `${document.getElementById("email").value}`,
     Subject : "new value from contact form portfolio website",
     Body : "dawdadasdaw"
   }).then(
   message => alert(message)
   );
+  console.log(document.getElementById("email").value)
 }
 

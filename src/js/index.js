@@ -124,7 +124,10 @@ function sendEmail(){
             Email: ${document.getElementById("email").value} <br>
             Message: ${document.getElementById("message").value}`
   }).then(
-  message => alert(message)
+  message => Toastify({
+    text: `${message}`,
+    className: "success",
+  }).showToast()
   );
   console.log(document.getElementById("email").value)
 }

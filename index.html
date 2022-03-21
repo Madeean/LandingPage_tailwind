@@ -11,6 +11,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body class="dark:bg-dakitam">
 
@@ -35,26 +36,26 @@
             md:flex md:items-center  md:z-auto md:static  md:w-auto md:py-0 py-4 md:pl-0 pl-7 md:opacity-100" id="ul-header">
 
                 <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent  cursor-pointer dark:text-dakitih dark:hover:text-blue-400 duration-300
-                hover:border-purple-400 hover:pb-2 hover:text-blue-400">
-                    <a href="#AboutMe" class="text-xl ">About Me</a>
+                hover:border-purple-400 hover:pb-2 hover:text-blue-400 nav__menu">
+                    <a data-scroll href="#AboutMe" class="text-xl actived">About Me</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
                 dark:text-dakitih dark:hover:text-blue-400
-                hover:border-purple-400 hover:pb-2 hover:text-blue-400">
-                    <a href="#MySkills" class="text-xl">Skills</a>
+                hover:border-purple-400 hover:pb-2 hover:text-blue-400 nav__menu">
+                    <a data-scroll href="#MySkills" class="text-xl">Skills</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
                 dark:text-dakitih dark:hover:text-blue-400
-                hover:border-purple-400 hover:pb-2 hover:text-blue-400">
-                    <a href="#Projects" class="text-xl">Projects</a>
+                hover:border-purple-400 hover:pb-2 hover:text-blue-400 nav__menu">
+                    <a data-scroll href="#Projects" class="text-xl">Projects</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
                 dark:text-dakitih dark:hover:text-blue-400
-                hover:border-purple-400 hover:pb-2 hover:text-blue-400">
-                    <a href="#Contact" class="text-xl">Contact</a>
+                hover:border-purple-400 hover:pb-2 hover:text-blue-400 nav__menu">
+                    <a data-scroll href="#Contact" class="text-xl">Contact</a>
                 </li>
                 <li class="mx-4 my-6 md:my-0 border-b-2 border-transparent duration-300 cursor-pointer
-                dark:text-dakitih dark:hover:text-blue-400
+                dark:text-dakitih dark:hover:text-blue-400 
                 ">
                     <i class='bx bxs-moon hover:text-blue-400' id="toggle"></i>
                 </li>
@@ -67,577 +68,592 @@
         
 
         <div class="flex flex-col justify-between mt-32 px-16 ml-5 mr-5 items-start
-        sm:flex-row  sm:items-center">
+        md:flex-row  md:items-center">
             
-            <div class="mb-16 dark:text-dakitih ">
-                <h1 class="text-2xl   sm:text-5xl ">Hi! I Am </h1>
-                <h1 class="text-3xl   sm:text-6xl py-4 font-semibold ">Made Reihan Diva Suarna</h1>
-                <h1 class="text-xl">Mahasiswa semester 4 universitas multimedia nusantara</h1>
-                <a download="" href="" class="font-semibold text-white bg-blue-400 rounded-lg px-5 py-3 mt-3 cursor-pointer border-none outline-none inline-block
-                dark:text-dakitam">
+            <div class="mb-16 dark:text-dakitih text-center home__data
+            md:text-left" data-aos="fade-up" data-aos-duration="3000">
+                <h1 class="text-2xl text-center
+                md:text-5xl md:text-left ">Hi! I Am </h1>
+                <h1 class="text-3xl  py-4 font-semibold text-center
+                md:text-6xl md:text-left ">Made Reihan Diva Suarna</h1>
+                <h1 class="text-xl text-center 
+                md:text-left">Mahasiswa semester 4 universitas multimedia nusantara</h1>
+                <a download="" href="" class="font-semibold text-white bg-blue-400 rounded-lg px-5 py-3 mt-3 cursor-pointer border-none outline-none inline-block 
+                dark:text-dakitam
+                ">
                     Download CV
                 </a>
             </div>
             
-            <div class="relative flex justify-end items-center">
+            <div class="relative flex justify-end items-center" data-aos="fade-down" data-aos-duration="3000">
                 <!-- <img src="./img/business-3d-answer.png" alt="" class="w-4/6"> -->
                 <div id="anim"></div>
             </div>
 
         </div>
 
-        <div class=" mt-32 px-16 ml-5 mr-5">
-            <h1 class="text-2xl   text-center font-medium
-            md:text-4xl 
-            dark:text-blue-400" id="AboutMe">About Me</h1>
-            <div class="grid grid-cols-12 lg:gap-10 xl:gap-20 mt-10 
-                        ">
-                <div class="col-span-12 flex flex-col justify-center items-center lg:col-start-2 lg:col-span-5  roundeed-2xl p-9 text-black hover:text-purple duration-300 cursor-pointer">
-                    <img class="h-80" src="./src/img/business-3d-answer.png" alt="">
-                </div>
-                <div class="col-span-12 lg:col-span-5  roundeed-2xl p-9 text-black hover:text-purple duration-300 cursor-pointer ">
-                    <div class="text-center mt-8 
-                            dark:text-dakitih ">
-                        <div class="grid grid-cols-3 gap-8 mb-8 ">
-                            <div class=" shadow-card rounded-xl py-3 px-2 dark:bg-dakibu">
-                                <i class="bx bx-briefcase-alt text-2xl mb-2 text-blue-400"></i>
-                                <h3 class="text-sm font-bold">Work Experience</h3>
-                                <span class="text-base" id="work_experience">Fresh Graduate</span>
+        <section id="AboutMe">
+            <div class=" mt-32 px-16 ml-5 mr-5">
+                <h1 class="text-2xl   text-center font-medium
+                md:text-4xl 
+                dark:text-blue-400">About Me</h1>
+                <div class="grid grid-cols-12 mt-10 
+                            ">
+                    <div class="col-span-12 flex flex-col justify-center items-center lg:col-start-2 lg:col-span-5  roundeed-2xl p-9 text-black hover:text-purple duration-300 cursor-pointer" data-aos="fade-right" data-aos-duration="3000">
+                        <img class="h-80" src="./src/img/business-3d-answer.png" alt="">
+                    </div>
+    
+                    <div class="col-span-12 lg:col-span-5  roundeed-2xl p-9 text-black hover:text-purple duration-300 cursor-pointer  text-center lg:text-left" data-aos="fade-left" data-aos-duration="3000">
+                        <div class="text-center mt-8 
+                                dark:text-dakitih ">
+                            <div class="grid grid-cols-1  gap-8 mb-8  md:grid-cols-3">
+                                <div class=" shadow-card rounded-xl py-3 px-2 dark:bg-dakibu">
+                                    <i class="bx bx-briefcase-alt text-2xl mb-2 text-blue-400"></i>
+                                    <h3 class="text-sm font-bold">Work Experience</h3>
+                                    <span class="text-base" id="work_experience">Fresh Graduate</span>
+                                </div>
+    
+                                <div class=" shadow-card rounded-xl py-3 px-2 dark:bg-dakibu">
+                                    <i class="bx bx-code text-2xl mb-2 text-blue-400"></i>
+                                    <h3 class="text-sm font-bold">Completed</h3>
+                                    <span class="text-base" id="completed_project">10+ Projects</span>
+                                </div>
+    
+                                <div class=" shadow-card rounded-xl py-3 px-2 dark:bg-dakibu">
+                                    <i class="bx bx-award text-2xl mb-2 text-blue-400"></i>
+                                    <h3 class="text-sm font-bold">Years Experience</h3>
+                                    <span class="text-base" id="years_experience">04+ Years</span>
+                                </div>
                             </div>
-
-                            <div class=" shadow-card rounded-xl py-3 px-2 dark:bg-dakibu">
-                                <i class="bx bx-code text-2xl mb-2 text-blue-400"></i>
-                                <h3 class="text-sm font-bold">Completed</h3>
-                                <span class="text-base" id="completed_project">10+ Projects</span>
-                            </div>
-
-                            <div class=" shadow-card rounded-xl py-3 px-2 dark:bg-dakibu">
-                                <i class="bx bx-award text-2xl mb-2 text-blue-400"></i>
-                                <h3 class="text-sm font-bold">Years Experience</h3>
-                                <span class="text-base" id="years_experience">04+ Years</span>
-                            </div>
+    
+                            <p class="mb-8 text-center lg:text-left
+                                    ">
+                                Backend Developer, I create web pages with Laravel, ExpressJs , blablabalbla
+                            </p>
+    
                         </div>
-
-                        <p class="mb-8 text-left 
-                                ">
-                            Backend Developer, I create web pages with Laravel, ExpressJs , blablabalbla
-                        </p>
-
+                        
+                        <a  href="#Contact" class="font-semibold text-white bg-blue-400 rounded-lg px-3 py-4  cursor-pointer border-none outline-none inline-block 
+                        dark:text-dakitam
+                        ">
+                            Contact Me
+                        </a>
+    
                     </div>
                     
-                    <a  href="#" class="font-semibold text-white bg-blue-400 rounded-lg px-3 py-4  cursor-pointer border-none outline-none inline-block 
-                    dark:text-dakitam
-                    ">
-                        Contact Me
-                    </a>
-
                 </div>
-                
             </div>
-        </div>
+        </section>
         
-        <div class="mt-32 px-16 ml-5 mr-5">
-            <h1 class="text-3xl font-medium text-center
-            md:text-4xl
-            dark:text-blue-400" id="MySkills">My Skills</h1>
-            <h1 class="text-2xl font-normal text-center mt-14 mb-8
-            md:text-3xl
-            dark:text-dakitih">Tehchnologies & tools I work with </h1>
-            <div class="grid gap-8 grid-cols-4 ml-auto mr-auto pt-20 pb-20 w-9/12 place-items-center  shadow-card loaalala dark:text-dakitih">
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class=" draggable align-middle w-20 h-20 inline-block text-xs shrink-0">
-                        <path d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"/>
-                        <path fill="#e44d26" d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"/>
-                        <path fill="#f16529" d="M256 480.5V131H404.3L376 447"/>
-                        <path fill="#ebebeb" d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"/>
-                        <path fill="#fff" d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"/>
-                    </svg>
-                    <p class="text-center text-base mt-2">HTML5</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0"
-                        xmlns:dc="http://purl.org/dc/elements/1.1/"
-                        xmlns:cc="http://creativecommons.org/ns#"
-                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                        xmlns:svg="http://www.w3.org/2000/svg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                        width="102.3716mm"
-                        height="144.49777mm"
-                        viewBox="0 0 362.73401 511.99998"
-                        id="svg3476"
-                        version="1.1"
-                        inkscape:version="0.91 r13725"
-                        sodipodi:docname="CSS3.svg">
-                        <defs
-                        id="defs3478" />
-                        <sodipodi:namedview
-                        id="base"
-                        pagecolor="#ffffff"
-                        bordercolor="#666666"
-                        borderopacity="1.0"
-                        inkscape:pageopacity="0.0"
-                        inkscape:pageshadow="2"
-                        inkscape:zoom="0.35"
-                        inkscape:cx="181.367"
-                        inkscape:cy="256"
-                        inkscape:document-units="px"
-                        inkscape:current-layer="layer1"
-                        showgrid="false"
-                        fit-margin-top="0"
-                        fit-margin-left="0"
-                        fit-margin-right="0"
-                        fit-margin-bottom="0"
-                        inkscape:window-width="1366"
-                        inkscape:window-height="704"
-                        inkscape:window-x="0"
-                        inkscape:window-y="27"
-                        inkscape:window-maximized="1" />
-                        <metadata
-                        id="metadata3481">
-                        <rdf:RDF>
-                        <cc:Work
-                            rdf:about="">
-                        <dc:format>image/svg+xml</dc:format>
-                        <dc:type
-                            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-                        <dc:title></dc:title>
-                        </cc:Work>
-                        </rdf:RDF>
-                        </metadata>
-                        <g
-                        inkscape:label="Calque 1"
-                        inkscape:groupmode="layer"
-                        id="layer1"
-                        transform="translate(-193.633,-276.3622)">
-                        <g
-                        id="g3013"
-                        transform="translate(119,276.3622)">
-                        <polygon
-                            id="polygon2989"
-                            points="437.367,100.62 404.321,470.819 255.778,512 107.644,470.877 74.633,100.62 "
-                            style="fill:#264de4" />
-                        <polygon
-                            id="polygon2991"
-                            points="376.03,447.246 404.27,130.894 256,130.894 256,480.523 "
-                            style="fill:#2965f1" />
-                        <polygon
-                            id="polygon2993"
-                            points="150.31,268.217 154.38,313.627 256,313.627 256,268.217 "
-                            style="fill:#ebebeb" />
-                        <polygon
-                            id="polygon2995"
-                            points="256,176.305 255.843,176.305 142.132,176.305 146.26,221.716 256,221.716 "
-                            style="fill:#ebebeb" />
-                        <polygon
-                            id="polygon2997"
-                            points="256,433.399 256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 "
-                            style="fill:#ebebeb" />
-                        <path
-                            id="path2999"
-                            d="m 160,0 55,0 0,23 -32,0 0,23 32,0 0,23 -55,0 z"
-                            inkscape:connector-curvature="0" />
-                        <path
-                            id="path3001"
-                            d="m 226,0 55,0 0,20 -32,0 0,4 32,0 0,46 -55,0 0,-21 32,0 0,-4 -32,0 z"
-                            inkscape:connector-curvature="0" />
-                        <path
-                            id="path3003"
-                            d="m 292,0 55,0 0,20 -32,0 0,4 32,0 0,46 -55,0 0,-21 32,0 0,-4 -32,0 z"
-                            inkscape:connector-curvature="0" />
-                        <polygon
-                            id="polygon3005"
-                            points="311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 369.597,176.305 255.843,176.305 255.843,221.716 319.831,221.716 315.699,268.217 255.843,268.217 255.843,313.627 "
-                            style="fill:#ffffff" />
-                        </g>
-                        </g>
-                    </svg>
-
-                    <p class="text-center text-base mt-2">CSS3</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630" class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0">
-                        <rect width="630" height="630" fill="#f7df1e"/>
-                        <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/>
-                    </svg>
-                    <p class="text-center text-base mt-2">JavaScript</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg height="383.5975" class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" id="svg3430" version="1.1" viewBox="0 0 711.20123 383.5975" width="711.20123" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg">
-                        <title id="title3510">Official PHP Logo</title>
-                        <metadata id="metadata3436">
-                          <rdf:RDF>
-                            <cc:Work rdf:about="">
-                              <dc:format>image/svg+xml</dc:format>
-                              <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
-                              <dc:title>Official PHP Logo</dc:title>
-                              <dc:creator>
-                                <cc:Agent>
-                                  <dc:title>Colin Viebrock</dc:title>
-                                </cc:Agent>
-                              </dc:creator>
-                              <dc:description/>
-                              <dc:contributor>
-                                <cc:Agent>
-                                  <dc:title/>
-                                </cc:Agent>
-                              </dc:contributor>
-                              <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/"/>
-                              <dc:rights>
-                                <cc:Agent>
-                                  <dc:title>Copyright Colin Viebrock 1997 - All rights reserved.</dc:title>
-                                </cc:Agent>
-                              </dc:rights>
-                              <dc:date>1997</dc:date>
-                            </cc:Work>
-                            <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
-                              <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
-                              <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
-                              <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
-                              <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
-                              <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
-                              <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
-                            </cc:License>
-                          </rdf:RDF>
-                        </metadata>
-                        <defs id="defs3434">
-                          <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3444">
-                            <path d="M 11.52,162 C 11.52,81.677 135.307,16.561 288,16.561 l 0,0 c 152.693,0 276.481,65.116 276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l 0,0 C 135.307,307.439 11.52,242.322 11.52,162" id="path3446"/>
-                          </clipPath>
-                          <radialGradient cx="0" cy="0" fx="0" fy="0" gradientTransform="matrix(363.05789,0,0,-363.05789,177.52002,256.30713)" gradientUnits="userSpaceOnUse" id="radialGradient3452" r="1" spreadMethod="pad">
-                            <stop id="stop3454" offset="0" style="stop-opacity:1;stop-color:#aeb2d5"/>
-                            <stop id="stop3456" offset="0.3" style="stop-opacity:1;stop-color:#aeb2d5"/>
-                            <stop id="stop3458" offset="0.75" style="stop-opacity:1;stop-color:#484c89"/>
-                            <stop id="stop3460" offset="1" style="stop-opacity:1;stop-color:#484c89"/>
-                          </radialGradient>
-                          <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3468">
-                            <path d="M 0,324 576,324 576,0 0,0 0,324 Z" id="path3470"/>
-                          </clipPath>
-                          <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3480">
-                            <path d="M 0,324 576,324 576,0 0,0 0,324 Z" id="path3482"/>
-                          </clipPath>
-                        </defs>
-                        <g id="g3438" transform="matrix(1.25,0,0,-1.25,-4.4,394.29875)">
-                          <g id="g3440">
-                            <g clip-path="url(#clipPath3444)" id="g3442">
-                              <g id="g3448">
-                                <g id="g3450">
-                                  <path d="M 11.52,162 C 11.52,81.677 135.307,16.561 288,16.561 l 0,0 c 152.693,0 276.481,65.116 276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l 0,0 C 135.307,307.439 11.52,242.322 11.52,162" id="path3462" style="fill:url(#radialGradient3452);stroke:none"/>
-                                </g>
-                              </g>
-                            </g>
-                          </g>
-                          <g id="g3464">
-                            <g clip-path="url(#clipPath3468)" id="g3466">
-                              <g id="g3472" transform="translate(288,27.3594)">
-                                <path d="M 0,0 C 146.729,0 265.68,60.281 265.68,134.641 265.68,209 146.729,269.282 0,269.282 -146.729,269.282 -265.68,209 -265.68,134.641 -265.68,60.281 -146.729,0 0,0" id="path3474" style="fill:#777bb3;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
-                              </g>
-                            </g>
-                          </g>
-                          <g id="g3476">
-                            <g clip-path="url(#clipPath3480)" id="g3478">
-                              <g id="g3484" transform="translate(161.7344,145.3066)">
-                                <path d="m 0,0 c 12.065,0 21.072,2.225 26.771,6.611 5.638,4.341 9.532,11.862 11.573,22.353 1.903,9.806 1.178,16.653 -2.154,20.348 C 32.783,53.086 25.417,55 14.297,55 L -4.984,55 -15.673,0 0,0 Z m -63.063,-67.75 c -0.895,0 -1.745,0.4 -2.314,1.092 -0.57,0.691 -0.801,1.601 -0.63,2.48 L -37.679,81.573 C -37.405,82.982 -36.17,84 -34.734,84 L 26.32,84 C 45.508,84 59.79,78.79 68.767,68.513 77.792,58.182 80.579,43.741 77.05,25.592 75.614,18.198 73.144,11.331 69.709,5.183 66.27,-0.972 61.725,-6.667 56.198,-11.747 49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l -24.722,0 -7.06,-36.322 c -0.274,-1.41 -1.508,-2.428 -2.944,-2.428 l -31.751,0 z" id="path3486" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
-                              </g>
-                              <g id="g3488" transform="translate(159.2236,197.3071)">
-                                <path d="m 0,0 16.808,0 c 13.421,0 18.083,-2.945 19.667,-4.7 2.628,-2.914 3.124,-9.058 1.435,-17.767 C 36.012,-32.217 32.494,-39.13 27.452,-43.012 22.29,-46.986 13.898,-49 2.511,-49 L -9.523,-49 0,0 Z m 28.831,35 -61.055,0 c -2.872,0 -5.341,-2.036 -5.889,-4.855 l -28.328,-145.751 c -0.342,-1.759 0.12,-3.578 1.259,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.75,0 c 2.873,0 5.342,2.036 5.89,4.855 l 6.588,33.895 22.249,0 c 12.582,0 23.174,1.372 31.479,4.077 8.541,2.775 16.399,7.48 23.354,13.984 5.752,5.292 10.49,11.232 14.08,17.657 3.591,6.427 6.171,13.594 7.668,21.302 3.715,19.104 0.697,34.402 -8.969,45.466 C 63.965,29.444 48.923,35 28.831,35 m -45.633,-90 19.313,0 c 12.801,0 22.336,2.411 28.601,7.234 6.266,4.824 10.492,12.875 12.688,24.157 2.101,10.832 1.144,18.476 -2.871,22.929 C 36.909,3.773 28.87,6 16.808,6 L -4.946,6 -16.802,-55 M 28.831,29 C 47.198,29 60.597,24.18 69.019,14.539 77.44,4.898 79.976,-8.559 76.616,-25.836 75.233,-32.953 72.894,-39.46 69.601,-45.355 66.304,-51.254 61.999,-56.648 56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743 17.925,-78 5.925,-78 l -27.196,0 -7.531,-38.75 -31.75,0 28.328,145.75 61.055,0" id="path3490" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
-                              </g>
-                              <g id="g3492" transform="translate(311.583,116.3066)">
-                                <path d="m 0,0 c -0.896,0 -1.745,0.4 -2.314,1.092 -0.571,0.691 -0.802,1.6 -0.631,2.48 L 9.586,68.061 C 10.778,74.194 10.484,78.596 8.759,80.456 7.703,81.593 4.531,83.5 -4.848,83.5 L -27.55,83.5 -43.305,2.428 C -43.579,1.018 -44.814,0 -46.25,0 l -31.5,0 c -0.896,0 -1.745,0.4 -2.315,1.092 -0.57,0.691 -0.801,1.601 -0.63,2.48 l 28.328,145.751 c 0.274,1.409 1.509,2.427 2.945,2.427 l 31.5,0 c 0.896,0 1.745,-0.4 2.315,-1.091 0.57,-0.692 0.801,-1.601 0.63,-2.481 L -21.813,113 2.609,113 c 18.605,0 31.221,-3.28 38.569,-10.028 7.49,-6.884 9.827,-17.891 6.947,-32.719 L 34.945,2.428 C 34.671,1.018 33.437,0 32,0 L 0,0 Z" id="path3494" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
-                              </g>
-                              <g id="g3496" transform="translate(293.6611,271.0571)">
-                                <path d="m 0,0 -31.5,0 c -2.873,0 -5.342,-2.036 -5.89,-4.855 l -28.328,-145.751 c -0.342,-1.759 0.12,-3.578 1.26,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.5,0 c 2.872,0 5.342,2.036 5.89,4.855 l 15.283,78.645 20.229,0 c 9.363,0 11.328,-2 11.407,-2.086 0.568,-0.611 1.315,-3.441 0.082,-9.781 l -12.531,-64.489 c -0.342,-1.759 0.12,-3.578 1.26,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 32,0 c 2.872,0 5.342,2.036 5.89,4.855 l 13.179,67.825 c 3.093,15.921 0.447,27.864 -7.861,35.5 -7.928,7.281 -21.208,10.82 -40.599,10.82 l -20.784,0 6.143,31.605 C 6.231,-5.386 5.77,-3.566 4.63,-2.184 3.49,-0.801 1.792,0 0,0 m 0,-6 -7.531,-38.75 28.062,0 c 17.657,0 29.836,-3.082 36.539,-9.238 6.703,-6.16 8.711,-16.141 6.032,-29.938 l -13.18,-67.824 -32,0 12.531,64.488 c 1.426,7.336 0.902,12.34 -1.574,15.008 -2.477,2.668 -7.746,4.004 -15.805,4.004 l -25.176,0 -16.226,-83.5 -31.5,0 L -31.5,-6 0,-6" id="path3498" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
-                              </g>
-                              <g id="g3500" transform="translate(409.5498,145.3066)">
-                                <path d="m 0,0 c 12.065,0 21.072,2.225 26.771,6.611 5.638,4.34 9.532,11.861 11.574,22.353 1.903,9.806 1.178,16.653 -2.155,20.348 C 32.783,53.086 25.417,55 14.297,55 L -4.984,55 -15.673,0 0,0 Z m -63.062,-67.75 c -0.895,0 -1.745,0.4 -2.314,1.092 -0.57,0.691 -0.802,1.601 -0.631,2.48 L -37.679,81.573 C -37.404,82.982 -36.17,84 -34.733,84 L 26.32,84 C 45.509,84 59.79,78.79 68.768,68.513 77.793,58.183 80.579,43.742 77.051,25.592 75.613,18.198 73.144,11.331 69.709,5.183 66.27,-0.972 61.725,-6.667 56.198,-11.747 49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l -24.723,0 -7.057,-36.322 c -0.275,-1.41 -1.509,-2.428 -2.946,-2.428 l -31.75,0 z" id="path3502" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
-                              </g>
-                              <g id="g3504" transform="translate(407.0391,197.3071)">
-                                <path d="M 0,0 16.808,0 C 30.229,0 34.891,-2.945 36.475,-4.7 39.104,-7.614 39.6,-13.758 37.91,-22.466 36.012,-32.217 32.493,-39.13 27.452,-43.012 22.29,-46.986 13.898,-49 2.511,-49 L -9.522,-49 0,0 Z m 28.831,35 -61.054,0 c -2.872,0 -5.341,-2.036 -5.889,-4.855 L -66.44,-115.606 c -0.342,-1.759 0.12,-3.578 1.259,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.75,0 c 2.872,0 5.342,2.036 5.89,4.855 l 6.587,33.895 22.249,0 c 12.582,0 23.174,1.372 31.479,4.077 8.541,2.775 16.401,7.481 23.356,13.986 5.752,5.291 10.488,11.23 14.078,17.655 3.591,6.427 6.171,13.594 7.668,21.302 3.715,19.105 0.697,34.403 -8.969,45.467 C 63.965,29.444 48.924,35 28.831,35 m -45.632,-90 19.312,0 c 12.801,0 22.336,2.411 28.601,7.234 6.267,4.824 10.492,12.875 12.688,24.157 2.102,10.832 1.145,18.476 -2.871,22.929 C 36.909,3.773 28.87,6 16.808,6 L -4.946,6 -16.801,-55 M 28.831,29 C 47.198,29 60.597,24.18 69.019,14.539 77.441,4.898 79.976,-8.559 76.616,-25.836 75.233,-32.953 72.894,-39.46 69.601,-45.355 66.304,-51.254 61.999,-56.648 56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743 17.925,-78 5.925,-78 l -27.196,0 -7.53,-38.75 -31.75,0 28.328,145.75 61.054,0" id="path3506" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
-                              </g>
-                            </g>
-                          </g>
-                        </g>
-                      </svg>
-                    <p class="text-center text-base mt-2">PHP</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" viewBox="0 0 512 407.864"  xmlns="http://www.w3.org/2000/svg"><path d="m106.344 0c-29.214 0-50.831 25.57-49.863 53.3.929 26.641-.278 61.145-8.964 89.283-8.717 28.217-23.449 46.098-47.517 48.393v25.912c24.068 2.3 38.8 20.172 47.516 48.393 8.687 28.138 9.893 62.642 8.964 89.283-.968 27.726 20.649 53.3 49.868 53.3h299.347c29.214 0 50.827-25.57 49.859-53.3-.929-26.641.278-61.145 8.964-89.283 8.717-28.221 23.413-46.1 47.482-48.393v-25.912c-24.068-2.3-38.764-20.172-47.482-48.393-8.687-28.134-9.893-62.642-8.964-89.283.968-27.726-20.645-53.3-49.859-53.3h-299.355zm240.775 251.067c0 38.183-28.481 61.34-75.746 61.34h-80.458a8.678 8.678 0 0 1 -8.678-8.678v-199.593a8.678 8.678 0 0 1 8.678-8.678h80c39.411 0 65.276 21.348 65.276 54.124 0 23.005-17.4 43.6-39.567 47.208v1.2c30.176 3.31 50.495 24.21 50.495 53.077zm-84.519-128.1h-45.876v64.8h38.639c29.87 0 46.34-12.028 46.34-33.527-.003-20.148-14.163-31.273-39.103-31.273zm-45.876 90.511v71.411h47.564c31.1 0 47.573-12.479 47.573-35.931s-16.935-35.484-49.573-35.484h-45.564z" fill="#7952b3" fill-rule="evenodd"/>
-                    </svg>
-                    <p class="text-center text-base mt-2">Bootstrap</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M489.5 226.499C328 231.632 280 346.999 269 409.499C283.333 386.332 328.5 335.5 395 335.5C472.5 335.5 531.5 422 567.5 449C611.237 481.803 699.123 525.115 814.5 490C906.5 462 949.167 364.332 958.5 317.999C914 378.499 846.5 414.838 763 371.999C705.5 342.499 662.5 221 489.5 226.499Z" fill="#07B6D5"/>
-                        <path d="M261 500.999C99.5 506.132 51.5 621.499 40.5 683.999C54.8333 660.832 100 610 166.5 610C244 610 303 696.5 339 723.5C382.737 756.303 470.623 799.615 586 764.5C678 736.5 720.667 638.832 730 592.499C685.5 652.999 618 689.338 534.5 646.499C477 616.999 434 495.5 261 500.999Z" fill="#07B6D5"/>
-                    </svg>
-                    <p class="text-center text-base mt-2">Tailwind</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" height="2500" viewBox="0 -.11376601 49.74245785 51.31690859" width="2418" xmlns="http://www.w3.org/2000/svg"><path d="m49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1 -.402.694l-9.209 5.302v10.509c0 .286-.152.55-.4.694l-19.223 11.066c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1 -.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054l-19.219-11.066a.801.801 0 0 1 -.402-.694v-32.916c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216zm-36.84-31.068v31.068l17.618 10.143v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-21.483l-4.645-2.676-3.363-1.934zm8.81-5.994-8.007 4.609 8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764 4.645-2.674v-20.096l-3.363 1.936-4.646 2.675v20.096zm24.667-23.325-8.006 4.609 8.006 4.609 8.005-4.61zm-.801 10.605-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937zm-18.422 20.561 11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833z" fill="#ff2d20"/></svg>
-                    <p class="text-center text-base mt-2">Laravel</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" width="2105" height="2500" viewBox="0 0 256 304" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><path d="M13.104 287.306c-5.204 0-6.717-3.03-6.717-7.57 0-1.513.19-3.22.424-5.018 1.14-7.851 3.923-12.343 10.64-12.343 4.543 0 6.758 2.032 6.758 5.722v1.799h4.507c.05 0 .05-1.656.05-2.033 0-5.392-3.265-10.506-11.308-10.506-10.929 0-15.423 5.937-17.079 17.576-.237 1.562-.379 3.02-.379 4.576 0 6.86 2.699 13.1 12.349 13.1 7.332 0 11.687-3.575 14.24-7.975l-4.306-2.9c-2.79 4.401-5.82 5.572-9.179 5.572zm29.57-21.668c-8.754 0-12.536 4.492-13.813 13.432a23.325 23.325 0 0 0-.24 3.124c0 5.77 2.697 10.362 10.17 10.362 8.754 0 12.587-4.685 13.864-13.486.142-1.134.237-2.175.237-3.215.002-5.865-2.788-10.217-10.218-10.217zm3.643 13.435c-.947 6.483-2.979 8.47-6.814 8.47-3.073 0-4.586-1.278-4.586-5.11 0-.947.096-2.081.284-3.36.947-6.433 2.839-8.42 6.718-8.42 3.123 0 4.682 1.277 4.682 5.156 0 .946-.096 2.035-.284 3.264zm28.58-21.246l-1.465 8.685c-.094.755-.046.504.24 1.214-1.372-1.04-3.834-1.728-5.49-1.728-7.854 0-12.252 3.555-13.67 13.49a19.414 19.414 0 0 0-.237 3.171c0 7.241 4.257 9.94 9.98 9.94 2.416 0 4.78.05 6.623-1.509l.471 2.943h4.543l5.298-36.206h-6.293zm-4.494 28.342c-2.127 1.274-4.207 1.562-5.484 1.562-3.454 0-4.4-1.799-4.4-4.683 0-1.089.142-2.363.333-3.739 1.086-7.521 3.5-8.848 6.623-8.848 2.032 0 3.592.333 5.062 1.139l-2.134 14.569zm24.603-20.531c-8.66 0-12.725 4.113-14.099 13.432-.144 1.137-.239 2.226-.239 3.266 0 6.387 3.266 10.22 10.454 10.22 5.583 0 9.75-2.32 11.972-6.578l-4.779-1.94c-1.37 2.08-3.215 3.5-6.48 3.5-3.5 0-4.92-.942-4.92-4.065 0-.616.048-1.511.143-1.511h17.076c.24-2.414.52-4.12.52-5.535 0-4.728-1.796-10.79-9.648-10.79zm3.263 11.499H87.861c1.043-2.414 2.79-6.15 6.387-6.15 2.79 0 4.164 1.631 4.164 4.422-.003.473-.046 1.728-.143 1.728zm24.591-12.069l.567-4.827h-13.343l-.565 4.827h3.5l-3.782 24.137h-3.505l-.564 4.828h13.34l.57-4.828h-3.503l3.783-24.137h3.502zm27.11 7.241l1.705-4.827h-4.589l-3.309.683c-1.846-1.18-4.354-2.066-6.717-2.066-6.768 0-12.537 3.268-12.537 10.697 0 2.084.756 3.766 1.653 4.903-1.416.755-2.647 2.02-2.647 3.726 0 .756.282 1.53.852 2.238-2.841 1.706-4.586 4.533-4.586 7.842 0 6.39 6.669 7.753 11.778 7.753 6.433 0 14.099-1.47 14.099-9.655 0-2.79-1.75-4.97-6.812-5.916l-9.13-1.706c-1.04-.191-1.277-.522-1.277-.995 0-.71.43-1.086 1.136-1.086l.616.094c1.23.283 2.65.427 4.115.427 6.578 0 12.443-2.84 12.443-10.22 0-1.042-.188-1.747-.661-2.884.803.38 1.846.995 2.268.995h1.6v-.003zm-13.007 19.583c1.796.333 2.41.994 2.41 2.177 0 3.833-4.116 4.306-7.095 4.306-4.542 0-6.244-1.086-6.244-3.502 0-2.13.613-3.121 2.035-4.637l8.894 1.656zM135.02 279.5c-2.744 0-4.258-.992-4.258-3.36 0-3.5 2.035-5.535 5.583-5.535 2.839 0 4.212 1.183 4.212 3.498 0 3.502-1.989 5.397-5.537 5.397zm31.757-13.862c-2.65 0-5.013 1.3-7.948 3.616l-.425-1.772h-5.206l-3.642 26.55h6.292l2.745-20.134c1.846-1.135 4.115-2.783 6.055-2.783 2.364 0 3.218 1.141 3.218 3.316 0 .521-.05 2.064-.145 2.631l-2.315 16.97h6.293l2.315-17.108c.096-.8.19-2.119.19-2.874.003-4.5-2.129-8.412-7.427-8.412zm19.38 21.743l.048-.65 2.742-19.249h-10.456l-.659 4.827h4.586c-.379 0-.615.423-.661.804l-1.893 12.82c-.094.617-.14 1.901-.14 2.418 0 3.311 1.796 5.682 5.484 5.682h3.218l.71-4.828h-2.033c-.712 0-.946-1.257-.946-1.824zm4.067-29.554h-6.15c-.379 0-.379-1.393-.425-.92l-.854 6.802c-.049.428-.049 1.36.33 1.36h6.153c.379 0 .379-1.654.425-2.084l.854-5.25c.048-.473.048.092-.333.092zm12.831 29.715c-1.559 0-2.317-.663-2.317-2.08l.048-.097 1.987-13.056h7.19l2.175-4.827h-8.704l1.465-10.623-6.62 2.117-1.185 8.506h-3.831l-.661 4.827h4.446c-.425 2.414-.852.848-.898 1.323l-1.704 11.448c-.094.522-.094.9-.094 1.371 0 4.495 3.311 6.177 7.289 6.177 3.688 0 6.669-1.077 8.989-3.02l-2.935-3.61c-1.47.897-2.462 1.544-4.64 1.544zm23.087-21.904c-8.657 0-12.725 4.113-14.098 13.432-.142 1.137-.237 2.226-.237 3.266 0 6.387 3.264 10.22 10.454 10.22 5.583 0 9.75-2.32 11.97-6.578l-4.777-1.94c-1.37 2.08-3.217 3.5-6.483 3.5-3.498 0-4.92-.942-4.92-4.065 0-.616.051-1.511.146-1.511h17.077c.236-2.414.52-4.12.52-5.535 0-4.728-1.797-10.79-9.652-10.79zm3.266 11.499H219c1.04-2.414 2.788-6.15 6.387-6.15 2.79 0 4.164 1.631 4.164 4.422-.003.473-.049 1.728-.143 1.728zm23.797-11.5c-2.271 0-4.4 1.302-6.53 3.332l-.378-1.487h-5.202l-3.644 26.55h6.34l2.79-20.56c1.657-.991 3.549-1.838 5.347-1.838 1.137 0 2.223-.181 3.263-.04l.809-5.485c-.951-.189-1.897-.471-2.795-.471zM92.54 238.81c-14.32-6.19-27.72-21.922-27.752-38.019-.039-17.55 11.083-32.45 24.916-42.242-1.663 6.283-2.57 12.03 1.55 17.65 3.83 5.225 10.538 7.764 16.872 6.386 14.8-3.24 15.479-19.51 6.705-28.989-8.675-9.387-17.067-19.99-13.765-33.603 1.653-6.824 5.843-13.216 11.151-17.785-4.08 10.722 7.514 21.296 15.153 26.563 13.251 9.138 27.79 16.044 39.974 26.756 12.816 11.258 22.28 26.48 20.369 44.135-2.071 19.136-17.277 32.445-34.333 39.164 36.042-7.955 73.283-35.928 74.046-75.9.632-32.885-21.927-58.193-49.872-72.682l-1.46-.797c.767 1.861 1.018 3.444.989 4.861.25-1.045.42-2.119.468-3.227a15.728 15.728 0 0 1-.512 3.9l.044-.673a16.383 16.383 0 0 1-2.069 4.931l.41-.441c-5.575 9.247-20.668 11.255-28.124 1.68-11.986-15.402.251-32.008 1.963-48.318 2.143-20.441-10.676-40.285-26.57-52.16 8.754 14.161-2.779 32.896-12.006 43.37C101.74 53.523 90.859 62 80.982 71.225c-10.61 9.908-20.81 20.345-29.531 31.974-17.442 23.276-28.12 52.55-20.273 81.588 7.842 29.018 32.978 47.49 61.363 54.022z" fill="#EE4323"/></svg>
-                    <p class="text-center text-base mt-2">Codeigniter</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" xmlns="http://www.w3.org/2000/svg" width="589.827" height="361.238" version="1.2" viewBox="0 0 442.37 270.929"><defs><clipPath id="a"><path d="M239.03 226.605l-42.13 24.317c-1.578.91-2.546 2.59-2.546 4.406v48.668c0 1.817.968 3.496 2.546 4.406l42.133 24.336c1.575.907 3.517.907 5.09 0l42.126-24.336c1.57-.91 2.54-2.59 2.54-4.406v-48.668c0-1.816-.97-3.496-2.55-4.406l-42.12-24.317c-.79-.453-1.67-.68-2.55-.68-.88 0-1.76.227-2.55.68"/></clipPath><linearGradient id="b" x1="-.348" x2="1.251" gradientTransform="rotate(116.114 53.1 202.97) scale(86.48)" gradientUnits="userSpaceOnUse"><stop offset=".3" stop-color="#3E863D"/><stop offset=".5" stop-color="#55934F"/><stop offset=".8" stop-color="#5AAD45"/></linearGradient><clipPath id="c"><path d="M195.398 307.086c.403.523.907.976 1.5 1.316l36.14 20.875 6.02 3.46c.9.52 1.926.74 2.934.665.336-.027.672-.09 1-.183l44.434-81.36c-.34-.37-.738-.68-1.184-.94l-27.586-15.93-14.582-8.39c-.414-.24-.863-.41-1.32-.53zm0 0"/></clipPath><linearGradient id="d" x1="-.456" x2=".582" gradientTransform="rotate(-36.46 550.846 -214.337) scale(132.798)" gradientUnits="userSpaceOnUse"><stop offset=".57" stop-color="#3E863D"/><stop offset=".72" stop-color="#619857"/><stop offset="1" stop-color="#76AC64"/></linearGradient><clipPath id="e"><path d="M241.066 225.953c-.707.07-1.398.29-2.035.652l-42.01 24.247 45.3 82.51c.63-.09 1.25-.3 1.81-.624l42.13-24.336c1.3-.754 2.19-2.03 2.46-3.476l-46.18-78.89c-.34-.067-.68-.102-1.03-.102-.14 0-.28.007-.42.02"/></clipPath><linearGradient id="f" x1=".043" x2=".984" gradientTransform="translate(192.862 279.652) scale(97.417)" gradientUnits="userSpaceOnUse"><stop offset=".16" stop-color="#6BBF47"/><stop offset=".38" stop-color="#79B461"/><stop offset=".47" stop-color="#75AC64"/><stop offset=".7" stop-color="#659E5A"/><stop offset=".9" stop-color="#3E863D"/></linearGradient></defs><path fill="#689f63" d="M218.647 270.93c-1.46 0-2.91-.383-4.19-1.12l-13.337-7.896c-1.992-1.114-1.02-1.508-.363-1.735 2.656-.93 3.195-1.14 6.03-2.75.298-.17.688-.11.993.07l10.246 6.08c.37.2.895.2 1.238 0l39.95-23.06c.37-.21.61-.64.61-1.08v-46.1c0-.46-.24-.87-.618-1.1l-39.934-23.04c-.37-.22-.86-.22-1.23 0l-39.926 23.04c-.387.22-.633.65-.633 1.09v46.1c0 .44.24.86.62 1.07l10.94 6.32c5.94 2.97 9.57-.53 9.57-4.05v-45.5c0-.65.51-1.15 1.16-1.15h5.06c.63 0 1.15.5 1.15 1.15v45.52c0 7.92-4.32 12.47-11.83 12.47-2.31 0-4.13 0-9.21-2.5l-10.48-6.04c-2.59-1.5-4.19-4.3-4.19-7.29v-46.1c0-3 1.6-5.8 4.19-7.28l39.99-23.07c2.53-1.43 5.89-1.43 8.4 0l39.94 23.08c2.58 1.49 4.19 4.28 4.19 7.28v46.1c0 2.99-1.61 5.78-4.19 7.28l-39.94 23.07c-1.28.74-2.73 1.12-4.21 1.12"/><path fill="#689f63" d="M230.987 239.164c-17.48 0-21.145-8.024-21.145-14.754 0-.64.516-1.15 1.157-1.15h5.16c.57 0 1.05.415 1.14.978.78 5.258 3.1 7.91 13.67 7.91 8.42 0 12-1.902 12-6.367 0-2.57-1.02-4.48-14.1-5.76-10.94-1.08-17.7-3.49-17.7-12.24 0-8.06 6.8-12.86 18.19-12.86 12.79 0 19.13 4.44 19.93 13.98.03.33-.09.65-.31.89-.22.23-.53.37-.85.37h-5.19c-.54 0-1.01-.38-1.12-.9-1.25-5.53-4.27-7.3-12.48-7.3-9.19 0-10.26 3.2-10.26 5.6 0 2.91 1.26 3.76 13.66 5.4 12.28 1.63 18.11 3.93 18.11 12.56 0 8.7-7.26 13.69-19.92 13.69m48.66-48.89h1.34c1.1 0 1.31-.77 1.31-1.22 0-1.18-.81-1.18-1.26-1.18h-1.38zm-1.63-3.78h2.97c1.02 0 3.02 0 3.02 2.28 0 1.59-1.02 1.92-1.63 2.12 1.19.08 1.27.86 1.43 1.96.08.69.21 1.88.45 2.28h-1.83c-.05-.4-.33-2.6-.33-2.72-.12-.49-.29-.73-.9-.73h-1.51v3.46h-1.67zm-3.57 4.3c0 3.58 2.89 6.48 6.44 6.48 3.58 0 6.47-2.96 6.47-6.48 0-3.59-2.93-6.44-6.48-6.44-3.5 0-6.44 2.81-6.44 6.43m14.16.03c0 4.24-3.47 7.7-7.7 7.7-4.2 0-7.7-3.42-7.7-7.7 0-4.36 3.58-7.7 7.7-7.7 4.15 0 7.69 3.35 7.69 7.7"/><path fill="#333" fill-rule="evenodd" d="M94.936 90.55c0-1.84-.97-3.53-2.558-4.445l-42.356-24.37c-.715-.42-1.516-.64-2.328-.67h-.438c-.812.03-1.613.25-2.34.67L2.562 86.105C.984 87.025 0 88.715 0 90.555l.093 65.64c0 .91.47 1.76 1.27 2.21.78.48 1.76.48 2.54 0l25.18-14.42c1.59-.946 2.56-2.618 2.56-4.44V108.88c0-1.83.97-3.52 2.555-4.43l10.72-6.174c.796-.46 1.67-.688 2.56-.688.876 0 1.77.226 2.544.687l10.715 6.172c1.586.91 2.56 2.6 2.56 4.43v30.663c0 1.82.983 3.5 2.565 4.44l25.164 14.41c.79.47 1.773.47 2.56 0 .776-.45 1.268-1.3 1.268-2.21zm199.868 34.176c0 .457-.243.88-.64 1.106l-14.548 8.386c-.395.227-.883.227-1.277 0l-14.55-8.386c-.4-.227-.64-.65-.64-1.106V107.93c0-.458.24-.88.63-1.11l14.54-8.4c.4-.23.89-.23 1.29 0l14.55 8.4c.4.23.64.652.64 1.11zM298.734.324c-.794-.442-1.76-.43-2.544.027-.78.46-1.262 1.3-1.262 2.21v65c0 .64-.34 1.23-.894 1.55-.55.32-1.235.32-1.79 0L281.634 63c-1.58-.914-3.526-.914-5.112 0l-42.37 24.453c-1.583.91-2.56 2.6-2.56 4.42v48.92c0 1.83.977 3.51 2.56 4.43l42.37 24.47c1.582.91 3.53.91 5.117 0l42.37-24.48c1.58-.92 2.56-2.6 2.56-4.43V18.863c0-1.856-1.01-3.563-2.63-4.47zm141.093 107.164c1.574-.914 2.543-2.602 2.543-4.422V91.21c0-1.824-.97-3.507-2.547-4.425l-42.1-24.44c-1.59-.92-3.54-.92-5.13 0l-42.36 24.45c-1.59.92-2.56 2.6-2.56 4.43v48.9c0 1.84.99 3.54 2.58 4.45l42.09 23.99c1.55.89 3.45.9 5.02.03l25.46-14.15c.8-.45 1.31-1.3 1.31-2.22 0-.92-.49-1.78-1.29-2.23l-42.62-24.46c-.8-.45-1.29-1.3-1.29-2.21v-15.34c0-.916.48-1.76 1.28-2.216l13.26-7.65c.79-.46 1.76-.46 2.55 0l13.27 7.65c.79.45 1.28 1.3 1.28 2.21v12.06c0 .91.49 1.76 1.28 2.22.79.45 1.77.45 2.56-.01zm0 0"/><path fill="#689f63" fill-rule="evenodd" d="M394.538 105.2c.3-.177.676-.177.98 0l8.13 4.69c.304.176.49.5.49.85v9.39c0 .35-.186.674-.49.85l-8.13 4.69c-.304.177-.68.177-.98 0l-8.125-4.69c-.31-.176-.5-.5-.5-.85v-9.39c0-.35.18-.674.49-.85zm0 0"/><g clip-path="url(#a)" transform="translate(-78.306 -164.016)"><path fill="url(#b)" d="M331.363 246.793l-118.715-58.19-60.87 124.174L270.49 370.97zm0 0"/></g><g clip-path="url(#c)" transform="translate(-78.306 -164.016)"><path fill="url(#d)" d="M144.07 264.004l83.825 113.453 110.86-81.906-83.83-113.45zm0 0"/></g><g clip-path="url(#e)" transform="translate(-78.306 -164.016)"><path fill="url(#f)" d="M197.02 225.934v107.43h91.683v-107.43zm0 0"/></g></svg>
-                    <p class="text-center text-base mt-2">Node JS</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
-                    <svg
-                        class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0 dark:bg-dakitih"
-                        xmlns:dc="http://purl.org/dc/elements/1.1/"
-                        xmlns:cc="http://creativecommons.org/ns#"
-                        xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-                        xmlns:svg="http://www.w3.org/2000/svg"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-                        xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-                        id="Express"
-                        viewBox="0 0 120 60"
-                        version="1.1"
-                        sodipodi:docname="expressjs-ar21.svg"
-                        width="120"
-                        height="60"
-                        inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
-                        <metadata
-                        id="metadata24">
-                        <rdf:RDF>
-                        <cc:Work
-                            rdf:about="">
-                        <dc:format>image/svg+xml</dc:format>
-                        <dc:type
-                            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-                        <dc:title>Artboard 12</dc:title>
-                        </cc:Work>
-                        </rdf:RDF>
-                        </metadata>
-                        <defs
-                        id="defs22" />
-                        <sodipodi:namedview
-                        pagecolor="#ffffff"
-                        bordercolor="#666666"
-                        borderopacity="1"
-                        objecttolerance="10"
-                        gridtolerance="10"
-                        guidetolerance="10"
-                        inkscape:pageopacity="0"
-                        inkscape:pageshadow="2"
-                        inkscape:window-width="1920"
-                        inkscape:window-height="1001"
-                        id="namedview20"
-                        showgrid="false"
-                        inkscape:zoom="1.84375"
-                        inkscape:cx="-2.1694915"
-                        inkscape:cy="64"
-                        inkscape:window-x="-9"
-                        inkscape:window-y="-9"
-                        inkscape:window-maximized="1"
-                        inkscape:current-layer="Express" />
-                        <title
-                        id="title2">Artboard 12</title>
-                        <g
-                        id="original-wordmark"
-                        transform="matrix(0.85101532,0,0,0.85101532,5.5198422,-24.472693)">
-                        <path
-                        d="M 40.53,77.82 V 50.74 H 42 V 55 a 5.57,5.57 0 0 0 0.48,-0.6 7.28,7.28 0 0 1 6.64,-4.12 c 3.35,-0.1 6.07,1.14 7.67,4.12 a 13.24,13.24 0 0 1 0.32,12.14 c -1.49,3.34 -5.17,5 -9.11,4.39 A 7.37,7.37 0 0 1 42.12,67.05 V 77.82 Z M 42,60.32 c 0.13,1.32 0.18,2.26 0.33,3.18 0.58,3.62 2.72,5.77 6.08,6.16 A 6.91,6.91 0 0 0 56,65.27 11.77,11.77 0 0 0 55.74,55.59 6.77,6.77 0 0 0 48.61,51.65 6.59,6.59 0 0 0 42.72,56.52 33.4,33.4 0 0 0 42,60.32 Z"
-                        id="path4"
-                        inkscape:connector-curvature="0" />
-                        <path
-                        d="m 88.41,64 a 7.92,7.92 0 0 1 -7.74,7 c -6.16,0.31 -9.05,-3.78 -9.51,-8.5 a 13.62,13.62 0 0 1 1.2,-7.5 8.37,8.37 0 0 1 8.71,-4.67 8,8 0 0 1 7.1,6.09 41.09,41.09 0 0 1 0.69,4.5 H 72.67 c -0.3,4.28 2,7.72 5.26,8.55 4.06,1 7.53,-0.76 8.79,-4.62 C 87,63.86 87.51,63.72 88.41,64 Z M 72.67,59.55 h 14.47 c -0.09,-4.56 -2.93,-7.86 -6.78,-7.91 -4.36,-0.07 -7.5,3.11 -7.69,7.91 z"
-                        id="path6"
-                        inkscape:connector-curvature="0" />
-                        <path
-                        d="m 91.39,64.1 h 1.42 a 5.69,5.69 0 0 0 3.34,4.9 8.73,8.73 0 0 0 7.58,-0.2 3.41,3.41 0 0 0 2,-3.35 3.09,3.09 0 0 0 -2.08,-3.09 c -1.56,-0.58 -3.22,-0.9 -4.81,-1.41 A 35.25,35.25 0 0 1 94,59.18 c -2.56,-1.25 -2.72,-6.12 0.18,-7.66 a 10.21,10.21 0 0 1 9.76,-0.15 5.14,5.14 0 0 1 2.6,5.24 h -1.22 c 0,-0.06 -0.11,-0.11 -0.11,-0.17 -0.15,-3.89 -3.41,-5.09 -6.91,-4.75 a 9.17,9.17 0 0 0 -3,0.91 3,3 0 0 0 -1.74,3 3,3 0 0 0 2,2.82 c 1.54,0.56 3.15,0.92 4.73,1.36 1.27,0.35 2.59,0.58 3.82,1 a 4.51,4.51 0 0 1 3.1,4.07 4.81,4.81 0 0 1 -2.59,5 c -3.34,1.89 -8.84,1.39 -11.29,-1 A 6.67,6.67 0 0 1 91.39,64.1 Z"
-                        id="path8"
-                        inkscape:connector-curvature="0" />
-                        <path
-                        d="m 125.21,56.61 h -1.33 c 0,-0.18 -0.07,-0.34 -0.09,-0.49 a 4.35,4.35 0 0 0 -3.54,-4.18 8.73,8.73 0 0 0 -5.61,0.27 3.41,3.41 0 0 0 -2.47,3.25 3.14,3.14 0 0 0 2.4,3.16 c 2,0.62 4.05,1 6.08,1.56 a 17,17 0 0 1 1.94,0.59 5,5 0 0 1 0.27,9.31 11.13,11.13 0 0 1 -9,0.09 6.24,6.24 0 0 1 -3.76,-6.06 h 0.56 0.74 a 7.29,7.29 0 0 0 11.1,4.64 3.57,3.57 0 0 0 1.92,-3.34 3.09,3.09 0 0 0 -2.11,-3.07 c -1.56,-0.58 -3.22,-0.89 -4.81,-1.4 a 35.43,35.43 0 0 1 -4.87,-1.75 c -2.5,-1.23 -2.7,-6.06 0.15,-7.6 a 10.07,10.07 0 0 1 9.92,-0.11 5.23,5.23 0 0 1 2.51,5.13 z"
-                        id="path10"
-                        inkscape:connector-curvature="0" />
-                        <path
-                        d="M 38.1,70.51 A 2.29,2.29 0 0 1 35.26,69.43 C 33.63,66.99 31.83,64.66 30.1,62.28 l -0.75,-1 c -2.06,2.76 -4.12,5.41 -6,8.16 a 2.2,2.2 0 0 1 -2.7,1.06 l 7.73,-10.37 -7.19,-9.37 a 2.39,2.39 0 0 1 2.85,1 c 1.67,2.44 3.52,4.77 5.36,7.24 1.85,-2.45 3.68,-4.79 5.39,-7.21 a 2.15,2.15 0 0 1 2.68,-1 l -2.79,3.7 c -1.25,1.65 -2.48,3.31 -3.78,4.92 a 1,1 0 0 0 0,1.49 c 2.39,3.17 4.76,6.35 7.2,9.61 z"
-                        id="path12"
-                        inkscape:connector-curvature="0" />
-                        <path
-                        d="m 70.92,50.66 v 1.4 a 7.25,7.25 0 0 0 -7.72,7.49 q 0,4.94 0,9.88 c 0,0.35 0,0.7 0,1.12 H 61.77 V 50.74 h 1.4 v 4.06 c 1.73,-2.96 4.4,-4.06 7.75,-4.14 z"
-                        id="path14"
-                        inkscape:connector-curvature="0" />
-                        <path
-                        d="m 2.13,60 c 0.21,-1 0.34,-2.09 0.63,-3.11 1.73,-6.15 8.78,-8.71 13.63,-4.9 2.84,2.23 3.55,5.39 3.41,8.95 H 3.8 C 3.54,67.3 8.13,71.14 14,69.18 a 6.09,6.09 0 0 0 3.87,-4.31 c 0.31,-1 0.81,-1.17 1.76,-0.88 A 8.12,8.12 0 0 1 15.75,69.92 9.4,9.4 0 0 1 4.8,68.52 9.85,9.85 0 0 1 2.34,62.74 c 0,-0.34 -0.13,-0.68 -0.2,-1 Q 2.13,60.85 2.13,60 Z M 3.82,59.57 H 18.29 C 18.2,54.96 15.29,51.69 11.41,51.66 7.09,51.6 4,54.8 3.81,59.55 Z"
-                        id="path16"
-                        inkscape:connector-curvature="0" />
-                        </g>
+        <section id="MySkills">
+            <div class="mt-32 px-16 ml-5 mr-5">
+                <h1 class="text-3xl font-medium text-center
+                md:text-4xl
+                dark:text-blue-400" >My Skills</h1>
+                <h1 class="text-2xl font-normal text-center mt-14 mb-8
+                md:text-3xl
+                dark:text-dakitih">Tehchnologies & tools I work with </h1>
+                <div class="grid gap-8 grid-cols-2 ml-auto mr-auto pt-20 pb-20 w-9/12 place-items-center  shadow-card loaalala dark:text-dakitih lg:grid-cols-4">
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class=" draggable align-middle w-20 h-20 inline-block text-xs shrink-0">
+                            <path d="M108.4 0h23v22.8h21.2V0h23v69h-23V46h-21v23h-23.2M206 23h-20.3V0h63.7v23H229v46h-23M259.5 0h24.1l14.8 24.3L313.2 0h24.1v69h-23V34.8l-16.1 24.8l-16.1-24.8v34.2h-22.6M348.7 0h23v46.2h32.6V69h-55.6"/>
+                            <path fill="#e44d26" d="M107.6 471l-33-370.4h362.8l-33 370.2L255.7 512"/>
+                            <path fill="#f16529" d="M256 480.5V131H404.3L376 447"/>
+                            <path fill="#ebebeb" d="M142 176.3h114v45.4h-64.2l4.2 46.5h60v45.3H154.4M156.4 336.3H202l3.2 36.3 50.8 13.6v47.4l-93.2-26"/>
+                            <path fill="#fff" d="M369.6 176.3H255.8v45.4h109.6M361.3 268.2H255.8v45.4h56l-5.3 59-50.7 13.6v47.2l93-25.8"/>
                         </svg>
-                    <p class="text-center text-base mt-2">Express JS</p>
-                </div>
-                <div class="flex items-center justify-center flex-col w-32 h-32"  data-tilt data-tilt-max="30">
-                    <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0
-                    dark:bg-dakitih" width="207px" height="124px" viewBox="0 0 207 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                        <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
-                        <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                            <g id="Black-Next.js" transform="translate(-247.000000, -138.000000)" fill="#000000" fill-rule="nonzero">
-                                <g id="next-black" transform="translate(247.000000, 138.000000)">
-                                    <g id="EXT-+-Type-something">
-                                        <path d="M48.9421964,32.6320058 L87.9011585,32.6320058 L87.9011585,35.7136421 L52.5134345,35.7136421 L52.5134345,58.9070103 L85.7908813,58.9070103 L85.7908813,61.9886466 L52.5134345,61.9886466 L52.5134345,87.4526941 L88.306981,87.4526941 L88.306981,90.5343303 L48.9421964,90.5343303 L48.9421964,32.6320058 Z M91.3912326,32.6320058 L95.5306221,32.6320058 L113.8738,58.0960534 L132.622801,32.6320058 L158.124498,0.286809811 L116.22757,60.7722112 L137.817329,90.5343303 L133.51561,90.5343303 L113.8738,63.4483691 L94.1508254,90.5343303 L89.9302715,90.5343303 L111.682358,60.7722112 L91.3912326,32.6320058 Z M139.359455,35.713642 L139.359455,32.6320058 L183.756439,32.6320058 L183.756439,35.7136421 L163.302983,35.7136421 L163.302983,90.5343303 L159.731745,90.5343303 L159.731745,35.7136421 L139.359455,35.713642 Z" id="EXT"></path>
-                                        <polygon id="Type-something" points="0.202923647 32.6320058 4.66697141 32.6320058 66.2235778 124.303087 40.785176 90.5343303 3.93649086 37.0111732 3.77416185 90.5343303 0.202923647 90.5343303"></polygon>
+                        <p class="text-center text-base mt-2">HTML5</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0"
+                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                            xmlns:cc="http://creativecommons.org/ns#"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:svg="http://www.w3.org/2000/svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                            width="102.3716mm"
+                            height="144.49777mm"
+                            viewBox="0 0 362.73401 511.99998"
+                            id="svg3476"
+                            version="1.1"
+                            inkscape:version="0.91 r13725"
+                            sodipodi:docname="CSS3.svg">
+                            <defs
+                            id="defs3478" />
+                            <sodipodi:namedview
+                            id="base"
+                            pagecolor="#ffffff"
+                            bordercolor="#666666"
+                            borderopacity="1.0"
+                            inkscape:pageopacity="0.0"
+                            inkscape:pageshadow="2"
+                            inkscape:zoom="0.35"
+                            inkscape:cx="181.367"
+                            inkscape:cy="256"
+                            inkscape:document-units="px"
+                            inkscape:current-layer="layer1"
+                            showgrid="false"
+                            fit-margin-top="0"
+                            fit-margin-left="0"
+                            fit-margin-right="0"
+                            fit-margin-bottom="0"
+                            inkscape:window-width="1366"
+                            inkscape:window-height="704"
+                            inkscape:window-x="0"
+                            inkscape:window-y="27"
+                            inkscape:window-maximized="1" />
+                            <metadata
+                            id="metadata3481">
+                            <rdf:RDF>
+                            <cc:Work
+                                rdf:about="">
+                            <dc:format>image/svg+xml</dc:format>
+                            <dc:type
+                                rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                            <dc:title></dc:title>
+                            </cc:Work>
+                            </rdf:RDF>
+                            </metadata>
+                            <g
+                            inkscape:label="Calque 1"
+                            inkscape:groupmode="layer"
+                            id="layer1"
+                            transform="translate(-193.633,-276.3622)">
+                            <g
+                            id="g3013"
+                            transform="translate(119,276.3622)">
+                            <polygon
+                                id="polygon2989"
+                                points="437.367,100.62 404.321,470.819 255.778,512 107.644,470.877 74.633,100.62 "
+                                style="fill:#264de4" />
+                            <polygon
+                                id="polygon2991"
+                                points="376.03,447.246 404.27,130.894 256,130.894 256,480.523 "
+                                style="fill:#2965f1" />
+                            <polygon
+                                id="polygon2993"
+                                points="150.31,268.217 154.38,313.627 256,313.627 256,268.217 "
+                                style="fill:#ebebeb" />
+                            <polygon
+                                id="polygon2995"
+                                points="256,176.305 255.843,176.305 142.132,176.305 146.26,221.716 256,221.716 "
+                                style="fill:#ebebeb" />
+                            <polygon
+                                id="polygon2997"
+                                points="256,433.399 256,386.153 255.801,386.206 205.227,372.55 201.994,336.333 177.419,336.333 156.409,336.333 162.771,407.634 255.791,433.457 "
+                                style="fill:#ebebeb" />
+                            <path
+                                id="path2999"
+                                d="m 160,0 55,0 0,23 -32,0 0,23 32,0 0,23 -55,0 z"
+                                inkscape:connector-curvature="0" />
+                            <path
+                                id="path3001"
+                                d="m 226,0 55,0 0,20 -32,0 0,4 32,0 0,46 -55,0 0,-21 32,0 0,-4 -32,0 z"
+                                inkscape:connector-curvature="0" />
+                            <path
+                                id="path3003"
+                                d="m 292,0 55,0 0,20 -32,0 0,4 32,0 0,46 -55,0 0,-21 32,0 0,-4 -32,0 z"
+                                inkscape:connector-curvature="0" />
+                            <polygon
+                                id="polygon3005"
+                                points="311.761,313.627 306.49,372.521 255.843,386.191 255.843,433.435 348.937,407.634 349.62,399.962 360.291,280.411 361.399,268.217 369.597,176.305 255.843,176.305 255.843,221.716 319.831,221.716 315.699,268.217 255.843,268.217 255.843,313.627 "
+                                style="fill:#ffffff" />
+                            </g>
+                            </g>
+                        </svg>
+    
+                        <p class="text-center text-base mt-2">CSS3</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 630 630" class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0">
+                            <rect width="630" height="630" fill="#f7df1e"/>
+                            <path d="m423.2 492.19c12.69 20.72 29.2 35.95 58.4 35.95 24.53 0 40.2-12.26 40.2-29.2 0-20.3-16.1-27.49-43.1-39.3l-14.8-6.35c-42.72-18.2-71.1-41-71.1-89.2 0-44.4 33.83-78.2 86.7-78.2 37.64 0 64.7 13.1 84.2 47.4l-46.1 29.6c-10.15-18.2-21.1-25.37-38.1-25.37-17.34 0-28.33 11-28.33 25.37 0 17.76 11 24.95 36.4 35.95l14.8 6.34c50.3 21.57 78.7 43.56 78.7 93 0 53.3-41.87 82.5-98.1 82.5-54.98 0-90.5-26.2-107.88-60.54zm-209.13 5.13c9.3 16.5 17.76 30.45 38.1 30.45 19.45 0 31.72-7.61 31.72-37.2v-201.3h59.2v202.1c0 61.3-35.94 89.2-88.4 89.2-47.4 0-74.85-24.53-88.81-54.075z"/>
+                        </svg>
+                        <p class="text-center text-base mt-2">JavaScript</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg height="383.5975" class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" id="svg3430" version="1.1" viewBox="0 0 711.20123 383.5975" width="711.20123" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:svg="http://www.w3.org/2000/svg">
+                            <title id="title3510">Official PHP Logo</title>
+                            <metadata id="metadata3436">
+                              <rdf:RDF>
+                                <cc:Work rdf:about="">
+                                  <dc:format>image/svg+xml</dc:format>
+                                  <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+                                  <dc:title>Official PHP Logo</dc:title>
+                                  <dc:creator>
+                                    <cc:Agent>
+                                      <dc:title>Colin Viebrock</dc:title>
+                                    </cc:Agent>
+                                  </dc:creator>
+                                  <dc:description/>
+                                  <dc:contributor>
+                                    <cc:Agent>
+                                      <dc:title/>
+                                    </cc:Agent>
+                                  </dc:contributor>
+                                  <cc:license rdf:resource="http://creativecommons.org/licenses/by-sa/3.0/"/>
+                                  <dc:rights>
+                                    <cc:Agent>
+                                      <dc:title>Copyright Colin Viebrock 1997 - All rights reserved.</dc:title>
+                                    </cc:Agent>
+                                  </dc:rights>
+                                  <dc:date>1997</dc:date>
+                                </cc:Work>
+                                <cc:License rdf:about="http://creativecommons.org/licenses/by-sa/3.0/">
+                                  <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+                                  <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+                                  <cc:requires rdf:resource="http://creativecommons.org/ns#Notice"/>
+                                  <cc:requires rdf:resource="http://creativecommons.org/ns#Attribution"/>
+                                  <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+                                  <cc:requires rdf:resource="http://creativecommons.org/ns#ShareAlike"/>
+                                </cc:License>
+                              </rdf:RDF>
+                            </metadata>
+                            <defs id="defs3434">
+                              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3444">
+                                <path d="M 11.52,162 C 11.52,81.677 135.307,16.561 288,16.561 l 0,0 c 152.693,0 276.481,65.116 276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l 0,0 C 135.307,307.439 11.52,242.322 11.52,162" id="path3446"/>
+                              </clipPath>
+                              <radialGradient cx="0" cy="0" fx="0" fy="0" gradientTransform="matrix(363.05789,0,0,-363.05789,177.52002,256.30713)" gradientUnits="userSpaceOnUse" id="radialGradient3452" r="1" spreadMethod="pad">
+                                <stop id="stop3454" offset="0" style="stop-opacity:1;stop-color:#aeb2d5"/>
+                                <stop id="stop3456" offset="0.3" style="stop-opacity:1;stop-color:#aeb2d5"/>
+                                <stop id="stop3458" offset="0.75" style="stop-opacity:1;stop-color:#484c89"/>
+                                <stop id="stop3460" offset="1" style="stop-opacity:1;stop-color:#484c89"/>
+                              </radialGradient>
+                              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3468">
+                                <path d="M 0,324 576,324 576,0 0,0 0,324 Z" id="path3470"/>
+                              </clipPath>
+                              <clipPath clipPathUnits="userSpaceOnUse" id="clipPath3480">
+                                <path d="M 0,324 576,324 576,0 0,0 0,324 Z" id="path3482"/>
+                              </clipPath>
+                            </defs>
+                            <g id="g3438" transform="matrix(1.25,0,0,-1.25,-4.4,394.29875)">
+                              <g id="g3440">
+                                <g clip-path="url(#clipPath3444)" id="g3442">
+                                  <g id="g3448">
+                                    <g id="g3450">
+                                      <path d="M 11.52,162 C 11.52,81.677 135.307,16.561 288,16.561 l 0,0 c 152.693,0 276.481,65.116 276.481,145.439 l 0,0 c 0,80.322 -123.788,145.439 -276.481,145.439 l 0,0 C 135.307,307.439 11.52,242.322 11.52,162" id="path3462" style="fill:url(#radialGradient3452);stroke:none"/>
                                     </g>
-                                    <path d="M183.396622,86.5227221 C184.134938,86.5227221 184.673474,85.9601075 184.673474,85.233037 C184.673474,84.5059658 184.134938,83.9433513 183.396622,83.9433513 C182.666993,83.9433513 182.11977,84.5059658 182.11977,85.233037 C182.11977,85.9601075 182.666993,86.5227221 183.396622,86.5227221 Z M186.905793,83.1297235 C186.905793,85.2763149 188.460599,86.678523 190.727662,86.678523 C193.142388,86.678523 194.601647,85.233037 194.601647,82.7229099 L194.601647,73.8855335 L192.655968,73.8855335 L192.655968,82.7142542 C192.655968,84.1078073 191.952397,84.8521899 190.710289,84.8521899 C189.598473,84.8521899 188.842785,84.1597409 188.816727,83.1297235 L186.905793,83.1297235 Z M197.146664,83.0172011 C197.285642,85.2503478 199.153145,86.678523 201.932686,86.678523 C204.903321,86.678523 206.762139,85.1811034 206.762139,82.792155 C206.762139,80.9138876 205.702439,79.8752151 203.131364,79.2779777 L201.750279,78.9404092 C200.117298,78.5595622 199.457158,78.0488813 199.457158,77.1573541 C199.457158,76.0321243 200.482113,75.296398 202.019547,75.296398 C203.478806,75.296398 204.48639,76.0148135 204.668797,77.1660091 L206.562359,77.1660091 C206.44944,75.0626962 204.590622,73.5825873 202.045605,73.5825873 C199.309495,73.5825873 197.48542,75.0626962 197.48542,77.2871878 C197.48542,79.1221767 198.519063,80.2127835 200.786126,80.7407758 L202.401734,81.1302779 C204.060773,81.5197807 204.790402,82.091051 204.790402,83.0431676 C204.790402,84.1510859 203.643842,84.9560573 202.08035,84.9560573 C200.403939,84.9560573 199.240006,84.2030196 199.074971,83.0172011 L197.146664,83.0172011 Z" id=".JS"></path>
+                                  </g>
+                                </g>
+                              </g>
+                              <g id="g3464">
+                                <g clip-path="url(#clipPath3468)" id="g3466">
+                                  <g id="g3472" transform="translate(288,27.3594)">
+                                    <path d="M 0,0 C 146.729,0 265.68,60.281 265.68,134.641 265.68,209 146.729,269.282 0,269.282 -146.729,269.282 -265.68,209 -265.68,134.641 -265.68,60.281 -146.729,0 0,0" id="path3474" style="fill:#777bb3;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
+                                  </g>
+                                </g>
+                              </g>
+                              <g id="g3476">
+                                <g clip-path="url(#clipPath3480)" id="g3478">
+                                  <g id="g3484" transform="translate(161.7344,145.3066)">
+                                    <path d="m 0,0 c 12.065,0 21.072,2.225 26.771,6.611 5.638,4.341 9.532,11.862 11.573,22.353 1.903,9.806 1.178,16.653 -2.154,20.348 C 32.783,53.086 25.417,55 14.297,55 L -4.984,55 -15.673,0 0,0 Z m -63.063,-67.75 c -0.895,0 -1.745,0.4 -2.314,1.092 -0.57,0.691 -0.801,1.601 -0.63,2.48 L -37.679,81.573 C -37.405,82.982 -36.17,84 -34.734,84 L 26.32,84 C 45.508,84 59.79,78.79 68.767,68.513 77.792,58.182 80.579,43.741 77.05,25.592 75.614,18.198 73.144,11.331 69.709,5.183 66.27,-0.972 61.725,-6.667 56.198,-11.747 49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l -24.722,0 -7.06,-36.322 c -0.274,-1.41 -1.508,-2.428 -2.944,-2.428 l -31.751,0 z" id="path3486" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
+                                  </g>
+                                  <g id="g3488" transform="translate(159.2236,197.3071)">
+                                    <path d="m 0,0 16.808,0 c 13.421,0 18.083,-2.945 19.667,-4.7 2.628,-2.914 3.124,-9.058 1.435,-17.767 C 36.012,-32.217 32.494,-39.13 27.452,-43.012 22.29,-46.986 13.898,-49 2.511,-49 L -9.523,-49 0,0 Z m 28.831,35 -61.055,0 c -2.872,0 -5.341,-2.036 -5.889,-4.855 l -28.328,-145.751 c -0.342,-1.759 0.12,-3.578 1.259,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.75,0 c 2.873,0 5.342,2.036 5.89,4.855 l 6.588,33.895 22.249,0 c 12.582,0 23.174,1.372 31.479,4.077 8.541,2.775 16.399,7.48 23.354,13.984 5.752,5.292 10.49,11.232 14.08,17.657 3.591,6.427 6.171,13.594 7.668,21.302 3.715,19.104 0.697,34.402 -8.969,45.466 C 63.965,29.444 48.923,35 28.831,35 m -45.633,-90 19.313,0 c 12.801,0 22.336,2.411 28.601,7.234 6.266,4.824 10.492,12.875 12.688,24.157 2.101,10.832 1.144,18.476 -2.871,22.929 C 36.909,3.773 28.87,6 16.808,6 L -4.946,6 -16.802,-55 M 28.831,29 C 47.198,29 60.597,24.18 69.019,14.539 77.44,4.898 79.976,-8.559 76.616,-25.836 75.233,-32.953 72.894,-39.46 69.601,-45.355 66.304,-51.254 61.999,-56.648 56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743 17.925,-78 5.925,-78 l -27.196,0 -7.531,-38.75 -31.75,0 28.328,145.75 61.055,0" id="path3490" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
+                                  </g>
+                                  <g id="g3492" transform="translate(311.583,116.3066)">
+                                    <path d="m 0,0 c -0.896,0 -1.745,0.4 -2.314,1.092 -0.571,0.691 -0.802,1.6 -0.631,2.48 L 9.586,68.061 C 10.778,74.194 10.484,78.596 8.759,80.456 7.703,81.593 4.531,83.5 -4.848,83.5 L -27.55,83.5 -43.305,2.428 C -43.579,1.018 -44.814,0 -46.25,0 l -31.5,0 c -0.896,0 -1.745,0.4 -2.315,1.092 -0.57,0.691 -0.801,1.601 -0.63,2.48 l 28.328,145.751 c 0.274,1.409 1.509,2.427 2.945,2.427 l 31.5,0 c 0.896,0 1.745,-0.4 2.315,-1.091 0.57,-0.692 0.801,-1.601 0.63,-2.481 L -21.813,113 2.609,113 c 18.605,0 31.221,-3.28 38.569,-10.028 7.49,-6.884 9.827,-17.891 6.947,-32.719 L 34.945,2.428 C 34.671,1.018 33.437,0 32,0 L 0,0 Z" id="path3494" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
+                                  </g>
+                                  <g id="g3496" transform="translate(293.6611,271.0571)">
+                                    <path d="m 0,0 -31.5,0 c -2.873,0 -5.342,-2.036 -5.89,-4.855 l -28.328,-145.751 c -0.342,-1.759 0.12,-3.578 1.26,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.5,0 c 2.872,0 5.342,2.036 5.89,4.855 l 15.283,78.645 20.229,0 c 9.363,0 11.328,-2 11.407,-2.086 0.568,-0.611 1.315,-3.441 0.082,-9.781 l -12.531,-64.489 c -0.342,-1.759 0.12,-3.578 1.26,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 32,0 c 2.872,0 5.342,2.036 5.89,4.855 l 13.179,67.825 c 3.093,15.921 0.447,27.864 -7.861,35.5 -7.928,7.281 -21.208,10.82 -40.599,10.82 l -20.784,0 6.143,31.605 C 6.231,-5.386 5.77,-3.566 4.63,-2.184 3.49,-0.801 1.792,0 0,0 m 0,-6 -7.531,-38.75 28.062,0 c 17.657,0 29.836,-3.082 36.539,-9.238 6.703,-6.16 8.711,-16.141 6.032,-29.938 l -13.18,-67.824 -32,0 12.531,64.488 c 1.426,7.336 0.902,12.34 -1.574,15.008 -2.477,2.668 -7.746,4.004 -15.805,4.004 l -25.176,0 -16.226,-83.5 -31.5,0 L -31.5,-6 0,-6" id="path3498" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
+                                  </g>
+                                  <g id="g3500" transform="translate(409.5498,145.3066)">
+                                    <path d="m 0,0 c 12.065,0 21.072,2.225 26.771,6.611 5.638,4.34 9.532,11.861 11.574,22.353 1.903,9.806 1.178,16.653 -2.155,20.348 C 32.783,53.086 25.417,55 14.297,55 L -4.984,55 -15.673,0 0,0 Z m -63.062,-67.75 c -0.895,0 -1.745,0.4 -2.314,1.092 -0.57,0.691 -0.802,1.601 -0.631,2.48 L -37.679,81.573 C -37.404,82.982 -36.17,84 -34.733,84 L 26.32,84 C 45.509,84 59.79,78.79 68.768,68.513 77.793,58.183 80.579,43.742 77.051,25.592 75.613,18.198 73.144,11.331 69.709,5.183 66.27,-0.972 61.725,-6.667 56.198,-11.747 49.582,-17.939 42.094,-22.429 33.962,-25.071 25.959,-27.678 15.681,-29 3.414,-29 l -24.723,0 -7.057,-36.322 c -0.275,-1.41 -1.509,-2.428 -2.946,-2.428 l -31.75,0 z" id="path3502" style="fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
+                                  </g>
+                                  <g id="g3504" transform="translate(407.0391,197.3071)">
+                                    <path d="M 0,0 16.808,0 C 30.229,0 34.891,-2.945 36.475,-4.7 39.104,-7.614 39.6,-13.758 37.91,-22.466 36.012,-32.217 32.493,-39.13 27.452,-43.012 22.29,-46.986 13.898,-49 2.511,-49 L -9.522,-49 0,0 Z m 28.831,35 -61.054,0 c -2.872,0 -5.341,-2.036 -5.889,-4.855 L -66.44,-115.606 c -0.342,-1.759 0.12,-3.578 1.259,-4.961 1.14,-1.383 2.838,-2.183 4.63,-2.183 l 31.75,0 c 2.872,0 5.342,2.036 5.89,4.855 l 6.587,33.895 22.249,0 c 12.582,0 23.174,1.372 31.479,4.077 8.541,2.775 16.401,7.481 23.356,13.986 5.752,5.291 10.488,11.23 14.078,17.655 3.591,6.427 6.171,13.594 7.668,21.302 3.715,19.105 0.697,34.403 -8.969,45.467 C 63.965,29.444 48.924,35 28.831,35 m -45.632,-90 19.312,0 c 12.801,0 22.336,2.411 28.601,7.234 6.267,4.824 10.492,12.875 12.688,24.157 2.102,10.832 1.145,18.476 -2.871,22.929 C 36.909,3.773 28.87,6 16.808,6 L -4.946,6 -16.801,-55 M 28.831,29 C 47.198,29 60.597,24.18 69.019,14.539 77.441,4.898 79.976,-8.559 76.616,-25.836 75.233,-32.953 72.894,-39.46 69.601,-45.355 66.304,-51.254 61.999,-56.648 56.679,-61.539 50.339,-67.472 43.296,-71.7 35.546,-74.218 27.796,-76.743 17.925,-78 5.925,-78 l -27.196,0 -7.53,-38.75 -31.75,0 28.328,145.75 61.054,0" id="path3506" style="fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none"/>
+                                  </g>
+                                </g>
+                              </g>
+                            </g>
+                          </svg>
+                        <p class="text-center text-base mt-2">PHP</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" viewBox="0 0 512 407.864"  xmlns="http://www.w3.org/2000/svg"><path d="m106.344 0c-29.214 0-50.831 25.57-49.863 53.3.929 26.641-.278 61.145-8.964 89.283-8.717 28.217-23.449 46.098-47.517 48.393v25.912c24.068 2.3 38.8 20.172 47.516 48.393 8.687 28.138 9.893 62.642 8.964 89.283-.968 27.726 20.649 53.3 49.868 53.3h299.347c29.214 0 50.827-25.57 49.859-53.3-.929-26.641.278-61.145 8.964-89.283 8.717-28.221 23.413-46.1 47.482-48.393v-25.912c-24.068-2.3-38.764-20.172-47.482-48.393-8.687-28.134-9.893-62.642-8.964-89.283.968-27.726-20.645-53.3-49.859-53.3h-299.355zm240.775 251.067c0 38.183-28.481 61.34-75.746 61.34h-80.458a8.678 8.678 0 0 1 -8.678-8.678v-199.593a8.678 8.678 0 0 1 8.678-8.678h80c39.411 0 65.276 21.348 65.276 54.124 0 23.005-17.4 43.6-39.567 47.208v1.2c30.176 3.31 50.495 24.21 50.495 53.077zm-84.519-128.1h-45.876v64.8h38.639c29.87 0 46.34-12.028 46.34-33.527-.003-20.148-14.163-31.273-39.103-31.273zm-45.876 90.511v71.411h47.564c31.1 0 47.573-12.479 47.573-35.931s-16.935-35.484-49.573-35.484h-45.564z" fill="#7952b3" fill-rule="evenodd"/>
+                        </svg>
+                        <p class="text-center text-base mt-2">Bootstrap</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M489.5 226.499C328 231.632 280 346.999 269 409.499C283.333 386.332 328.5 335.5 395 335.5C472.5 335.5 531.5 422 567.5 449C611.237 481.803 699.123 525.115 814.5 490C906.5 462 949.167 364.332 958.5 317.999C914 378.499 846.5 414.838 763 371.999C705.5 342.499 662.5 221 489.5 226.499Z" fill="#07B6D5"/>
+                            <path d="M261 500.999C99.5 506.132 51.5 621.499 40.5 683.999C54.8333 660.832 100 610 166.5 610C244 610 303 696.5 339 723.5C382.737 756.303 470.623 799.615 586 764.5C678 736.5 720.667 638.832 730 592.499C685.5 652.999 618 689.338 534.5 646.499C477 616.999 434 495.5 261 500.999Z" fill="#07B6D5"/>
+                        </svg>
+                        <p class="text-center text-base mt-2">Tailwind</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" height="2500" viewBox="0 -.11376601 49.74245785 51.31690859" width="2418" xmlns="http://www.w3.org/2000/svg"><path d="m49.626 11.564a.809.809 0 0 1 .028.209v10.972a.8.8 0 0 1 -.402.694l-9.209 5.302v10.509c0 .286-.152.55-.4.694l-19.223 11.066c-.044.025-.092.041-.14.058-.018.006-.035.017-.054.022a.805.805 0 0 1 -.41 0c-.022-.006-.042-.018-.063-.026-.044-.016-.09-.03-.132-.054l-19.219-11.066a.801.801 0 0 1 -.402-.694v-32.916c0-.072.01-.142.028-.21.006-.023.02-.044.028-.067.015-.042.029-.085.051-.124.015-.026.037-.047.055-.071.023-.032.044-.065.071-.093.023-.023.053-.04.079-.06.029-.024.055-.05.088-.069h.001l9.61-5.533a.802.802 0 0 1 .8 0l9.61 5.533h.002c.032.02.059.045.088.068.026.02.055.038.078.06.028.029.048.062.072.094.017.024.04.045.054.071.023.04.036.082.052.124.008.023.022.044.028.068a.809.809 0 0 1 .028.209v20.559l8.008-4.611v-10.51c0-.07.01-.141.028-.208.007-.024.02-.045.028-.068.016-.042.03-.085.052-.124.015-.026.037-.047.054-.071.024-.032.044-.065.072-.093.023-.023.052-.04.078-.06.03-.024.056-.05.088-.069h.001l9.611-5.533a.801.801 0 0 1 .8 0l9.61 5.533c.034.02.06.045.09.068.025.02.054.038.077.06.028.029.048.062.072.094.018.024.04.045.054.071.023.039.036.082.052.124.009.023.022.044.028.068zm-1.574 10.718v-9.124l-3.363 1.936-4.646 2.675v9.124l8.01-4.611zm-9.61 16.505v-9.13l-4.57 2.61-13.05 7.448v9.216zm-36.84-31.068v31.068l17.618 10.143v-9.214l-9.204-5.209-.003-.002-.004-.002c-.031-.018-.057-.044-.086-.066-.025-.02-.054-.036-.076-.058l-.002-.003c-.026-.025-.044-.056-.066-.084-.02-.027-.044-.05-.06-.078l-.001-.003c-.018-.03-.029-.066-.042-.1-.013-.03-.03-.058-.038-.09v-.001c-.01-.038-.012-.078-.016-.117-.004-.03-.012-.06-.012-.09v-21.483l-4.645-2.676-3.363-1.934zm8.81-5.994-8.007 4.609 8.005 4.609 8.006-4.61-8.006-4.608zm4.164 28.764 4.645-2.674v-20.096l-3.363 1.936-4.646 2.675v20.096zm24.667-23.325-8.006 4.609 8.006 4.609 8.005-4.61zm-.801 10.605-4.646-2.675-3.363-1.936v9.124l4.645 2.674 3.364 1.937zm-18.422 20.561 11.743-6.704 5.87-3.35-8-4.606-9.211 5.303-8.395 4.833z" fill="#ff2d20"/></svg>
+                        <p class="text-center text-base mt-2">Laravel</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" width="2105" height="2500" viewBox="0 0 256 304" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><path d="M13.104 287.306c-5.204 0-6.717-3.03-6.717-7.57 0-1.513.19-3.22.424-5.018 1.14-7.851 3.923-12.343 10.64-12.343 4.543 0 6.758 2.032 6.758 5.722v1.799h4.507c.05 0 .05-1.656.05-2.033 0-5.392-3.265-10.506-11.308-10.506-10.929 0-15.423 5.937-17.079 17.576-.237 1.562-.379 3.02-.379 4.576 0 6.86 2.699 13.1 12.349 13.1 7.332 0 11.687-3.575 14.24-7.975l-4.306-2.9c-2.79 4.401-5.82 5.572-9.179 5.572zm29.57-21.668c-8.754 0-12.536 4.492-13.813 13.432a23.325 23.325 0 0 0-.24 3.124c0 5.77 2.697 10.362 10.17 10.362 8.754 0 12.587-4.685 13.864-13.486.142-1.134.237-2.175.237-3.215.002-5.865-2.788-10.217-10.218-10.217zm3.643 13.435c-.947 6.483-2.979 8.47-6.814 8.47-3.073 0-4.586-1.278-4.586-5.11 0-.947.096-2.081.284-3.36.947-6.433 2.839-8.42 6.718-8.42 3.123 0 4.682 1.277 4.682 5.156 0 .946-.096 2.035-.284 3.264zm28.58-21.246l-1.465 8.685c-.094.755-.046.504.24 1.214-1.372-1.04-3.834-1.728-5.49-1.728-7.854 0-12.252 3.555-13.67 13.49a19.414 19.414 0 0 0-.237 3.171c0 7.241 4.257 9.94 9.98 9.94 2.416 0 4.78.05 6.623-1.509l.471 2.943h4.543l5.298-36.206h-6.293zm-4.494 28.342c-2.127 1.274-4.207 1.562-5.484 1.562-3.454 0-4.4-1.799-4.4-4.683 0-1.089.142-2.363.333-3.739 1.086-7.521 3.5-8.848 6.623-8.848 2.032 0 3.592.333 5.062 1.139l-2.134 14.569zm24.603-20.531c-8.66 0-12.725 4.113-14.099 13.432-.144 1.137-.239 2.226-.239 3.266 0 6.387 3.266 10.22 10.454 10.22 5.583 0 9.75-2.32 11.972-6.578l-4.779-1.94c-1.37 2.08-3.215 3.5-6.48 3.5-3.5 0-4.92-.942-4.92-4.065 0-.616.048-1.511.143-1.511h17.076c.24-2.414.52-4.12.52-5.535 0-4.728-1.796-10.79-9.648-10.79zm3.263 11.499H87.861c1.043-2.414 2.79-6.15 6.387-6.15 2.79 0 4.164 1.631 4.164 4.422-.003.473-.046 1.728-.143 1.728zm24.591-12.069l.567-4.827h-13.343l-.565 4.827h3.5l-3.782 24.137h-3.505l-.564 4.828h13.34l.57-4.828h-3.503l3.783-24.137h3.502zm27.11 7.241l1.705-4.827h-4.589l-3.309.683c-1.846-1.18-4.354-2.066-6.717-2.066-6.768 0-12.537 3.268-12.537 10.697 0 2.084.756 3.766 1.653 4.903-1.416.755-2.647 2.02-2.647 3.726 0 .756.282 1.53.852 2.238-2.841 1.706-4.586 4.533-4.586 7.842 0 6.39 6.669 7.753 11.778 7.753 6.433 0 14.099-1.47 14.099-9.655 0-2.79-1.75-4.97-6.812-5.916l-9.13-1.706c-1.04-.191-1.277-.522-1.277-.995 0-.71.43-1.086 1.136-1.086l.616.094c1.23.283 2.65.427 4.115.427 6.578 0 12.443-2.84 12.443-10.22 0-1.042-.188-1.747-.661-2.884.803.38 1.846.995 2.268.995h1.6v-.003zm-13.007 19.583c1.796.333 2.41.994 2.41 2.177 0 3.833-4.116 4.306-7.095 4.306-4.542 0-6.244-1.086-6.244-3.502 0-2.13.613-3.121 2.035-4.637l8.894 1.656zM135.02 279.5c-2.744 0-4.258-.992-4.258-3.36 0-3.5 2.035-5.535 5.583-5.535 2.839 0 4.212 1.183 4.212 3.498 0 3.502-1.989 5.397-5.537 5.397zm31.757-13.862c-2.65 0-5.013 1.3-7.948 3.616l-.425-1.772h-5.206l-3.642 26.55h6.292l2.745-20.134c1.846-1.135 4.115-2.783 6.055-2.783 2.364 0 3.218 1.141 3.218 3.316 0 .521-.05 2.064-.145 2.631l-2.315 16.97h6.293l2.315-17.108c.096-.8.19-2.119.19-2.874.003-4.5-2.129-8.412-7.427-8.412zm19.38 21.743l.048-.65 2.742-19.249h-10.456l-.659 4.827h4.586c-.379 0-.615.423-.661.804l-1.893 12.82c-.094.617-.14 1.901-.14 2.418 0 3.311 1.796 5.682 5.484 5.682h3.218l.71-4.828h-2.033c-.712 0-.946-1.257-.946-1.824zm4.067-29.554h-6.15c-.379 0-.379-1.393-.425-.92l-.854 6.802c-.049.428-.049 1.36.33 1.36h6.153c.379 0 .379-1.654.425-2.084l.854-5.25c.048-.473.048.092-.333.092zm12.831 29.715c-1.559 0-2.317-.663-2.317-2.08l.048-.097 1.987-13.056h7.19l2.175-4.827h-8.704l1.465-10.623-6.62 2.117-1.185 8.506h-3.831l-.661 4.827h4.446c-.425 2.414-.852.848-.898 1.323l-1.704 11.448c-.094.522-.094.9-.094 1.371 0 4.495 3.311 6.177 7.289 6.177 3.688 0 6.669-1.077 8.989-3.02l-2.935-3.61c-1.47.897-2.462 1.544-4.64 1.544zm23.087-21.904c-8.657 0-12.725 4.113-14.098 13.432-.142 1.137-.237 2.226-.237 3.266 0 6.387 3.264 10.22 10.454 10.22 5.583 0 9.75-2.32 11.97-6.578l-4.777-1.94c-1.37 2.08-3.217 3.5-6.483 3.5-3.498 0-4.92-.942-4.92-4.065 0-.616.051-1.511.146-1.511h17.077c.236-2.414.52-4.12.52-5.535 0-4.728-1.797-10.79-9.652-10.79zm3.266 11.499H219c1.04-2.414 2.788-6.15 6.387-6.15 2.79 0 4.164 1.631 4.164 4.422-.003.473-.049 1.728-.143 1.728zm23.797-11.5c-2.271 0-4.4 1.302-6.53 3.332l-.378-1.487h-5.202l-3.644 26.55h6.34l2.79-20.56c1.657-.991 3.549-1.838 5.347-1.838 1.137 0 2.223-.181 3.263-.04l.809-5.485c-.951-.189-1.897-.471-2.795-.471zM92.54 238.81c-14.32-6.19-27.72-21.922-27.752-38.019-.039-17.55 11.083-32.45 24.916-42.242-1.663 6.283-2.57 12.03 1.55 17.65 3.83 5.225 10.538 7.764 16.872 6.386 14.8-3.24 15.479-19.51 6.705-28.989-8.675-9.387-17.067-19.99-13.765-33.603 1.653-6.824 5.843-13.216 11.151-17.785-4.08 10.722 7.514 21.296 15.153 26.563 13.251 9.138 27.79 16.044 39.974 26.756 12.816 11.258 22.28 26.48 20.369 44.135-2.071 19.136-17.277 32.445-34.333 39.164 36.042-7.955 73.283-35.928 74.046-75.9.632-32.885-21.927-58.193-49.872-72.682l-1.46-.797c.767 1.861 1.018 3.444.989 4.861.25-1.045.42-2.119.468-3.227a15.728 15.728 0 0 1-.512 3.9l.044-.673a16.383 16.383 0 0 1-2.069 4.931l.41-.441c-5.575 9.247-20.668 11.255-28.124 1.68-11.986-15.402.251-32.008 1.963-48.318 2.143-20.441-10.676-40.285-26.57-52.16 8.754 14.161-2.779 32.896-12.006 43.37C101.74 53.523 90.859 62 80.982 71.225c-10.61 9.908-20.81 20.345-29.531 31.974-17.442 23.276-28.12 52.55-20.273 81.588 7.842 29.018 32.978 47.49 61.363 54.022z" fill="#EE4323"/></svg>
+                        <p class="text-center text-base mt-2">Codeigniter</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0" xmlns="http://www.w3.org/2000/svg" width="589.827" height="361.238" version="1.2" viewBox="0 0 442.37 270.929"><defs><clipPath id="a"><path d="M239.03 226.605l-42.13 24.317c-1.578.91-2.546 2.59-2.546 4.406v48.668c0 1.817.968 3.496 2.546 4.406l42.133 24.336c1.575.907 3.517.907 5.09 0l42.126-24.336c1.57-.91 2.54-2.59 2.54-4.406v-48.668c0-1.816-.97-3.496-2.55-4.406l-42.12-24.317c-.79-.453-1.67-.68-2.55-.68-.88 0-1.76.227-2.55.68"/></clipPath><linearGradient id="b" x1="-.348" x2="1.251" gradientTransform="rotate(116.114 53.1 202.97) scale(86.48)" gradientUnits="userSpaceOnUse"><stop offset=".3" stop-color="#3E863D"/><stop offset=".5" stop-color="#55934F"/><stop offset=".8" stop-color="#5AAD45"/></linearGradient><clipPath id="c"><path d="M195.398 307.086c.403.523.907.976 1.5 1.316l36.14 20.875 6.02 3.46c.9.52 1.926.74 2.934.665.336-.027.672-.09 1-.183l44.434-81.36c-.34-.37-.738-.68-1.184-.94l-27.586-15.93-14.582-8.39c-.414-.24-.863-.41-1.32-.53zm0 0"/></clipPath><linearGradient id="d" x1="-.456" x2=".582" gradientTransform="rotate(-36.46 550.846 -214.337) scale(132.798)" gradientUnits="userSpaceOnUse"><stop offset=".57" stop-color="#3E863D"/><stop offset=".72" stop-color="#619857"/><stop offset="1" stop-color="#76AC64"/></linearGradient><clipPath id="e"><path d="M241.066 225.953c-.707.07-1.398.29-2.035.652l-42.01 24.247 45.3 82.51c.63-.09 1.25-.3 1.81-.624l42.13-24.336c1.3-.754 2.19-2.03 2.46-3.476l-46.18-78.89c-.34-.067-.68-.102-1.03-.102-.14 0-.28.007-.42.02"/></clipPath><linearGradient id="f" x1=".043" x2=".984" gradientTransform="translate(192.862 279.652) scale(97.417)" gradientUnits="userSpaceOnUse"><stop offset=".16" stop-color="#6BBF47"/><stop offset=".38" stop-color="#79B461"/><stop offset=".47" stop-color="#75AC64"/><stop offset=".7" stop-color="#659E5A"/><stop offset=".9" stop-color="#3E863D"/></linearGradient></defs><path fill="#689f63" d="M218.647 270.93c-1.46 0-2.91-.383-4.19-1.12l-13.337-7.896c-1.992-1.114-1.02-1.508-.363-1.735 2.656-.93 3.195-1.14 6.03-2.75.298-.17.688-.11.993.07l10.246 6.08c.37.2.895.2 1.238 0l39.95-23.06c.37-.21.61-.64.61-1.08v-46.1c0-.46-.24-.87-.618-1.1l-39.934-23.04c-.37-.22-.86-.22-1.23 0l-39.926 23.04c-.387.22-.633.65-.633 1.09v46.1c0 .44.24.86.62 1.07l10.94 6.32c5.94 2.97 9.57-.53 9.57-4.05v-45.5c0-.65.51-1.15 1.16-1.15h5.06c.63 0 1.15.5 1.15 1.15v45.52c0 7.92-4.32 12.47-11.83 12.47-2.31 0-4.13 0-9.21-2.5l-10.48-6.04c-2.59-1.5-4.19-4.3-4.19-7.29v-46.1c0-3 1.6-5.8 4.19-7.28l39.99-23.07c2.53-1.43 5.89-1.43 8.4 0l39.94 23.08c2.58 1.49 4.19 4.28 4.19 7.28v46.1c0 2.99-1.61 5.78-4.19 7.28l-39.94 23.07c-1.28.74-2.73 1.12-4.21 1.12"/><path fill="#689f63" d="M230.987 239.164c-17.48 0-21.145-8.024-21.145-14.754 0-.64.516-1.15 1.157-1.15h5.16c.57 0 1.05.415 1.14.978.78 5.258 3.1 7.91 13.67 7.91 8.42 0 12-1.902 12-6.367 0-2.57-1.02-4.48-14.1-5.76-10.94-1.08-17.7-3.49-17.7-12.24 0-8.06 6.8-12.86 18.19-12.86 12.79 0 19.13 4.44 19.93 13.98.03.33-.09.65-.31.89-.22.23-.53.37-.85.37h-5.19c-.54 0-1.01-.38-1.12-.9-1.25-5.53-4.27-7.3-12.48-7.3-9.19 0-10.26 3.2-10.26 5.6 0 2.91 1.26 3.76 13.66 5.4 12.28 1.63 18.11 3.93 18.11 12.56 0 8.7-7.26 13.69-19.92 13.69m48.66-48.89h1.34c1.1 0 1.31-.77 1.31-1.22 0-1.18-.81-1.18-1.26-1.18h-1.38zm-1.63-3.78h2.97c1.02 0 3.02 0 3.02 2.28 0 1.59-1.02 1.92-1.63 2.12 1.19.08 1.27.86 1.43 1.96.08.69.21 1.88.45 2.28h-1.83c-.05-.4-.33-2.6-.33-2.72-.12-.49-.29-.73-.9-.73h-1.51v3.46h-1.67zm-3.57 4.3c0 3.58 2.89 6.48 6.44 6.48 3.58 0 6.47-2.96 6.47-6.48 0-3.59-2.93-6.44-6.48-6.44-3.5 0-6.44 2.81-6.44 6.43m14.16.03c0 4.24-3.47 7.7-7.7 7.7-4.2 0-7.7-3.42-7.7-7.7 0-4.36 3.58-7.7 7.7-7.7 4.15 0 7.69 3.35 7.69 7.7"/><path fill="#333" fill-rule="evenodd" d="M94.936 90.55c0-1.84-.97-3.53-2.558-4.445l-42.356-24.37c-.715-.42-1.516-.64-2.328-.67h-.438c-.812.03-1.613.25-2.34.67L2.562 86.105C.984 87.025 0 88.715 0 90.555l.093 65.64c0 .91.47 1.76 1.27 2.21.78.48 1.76.48 2.54 0l25.18-14.42c1.59-.946 2.56-2.618 2.56-4.44V108.88c0-1.83.97-3.52 2.555-4.43l10.72-6.174c.796-.46 1.67-.688 2.56-.688.876 0 1.77.226 2.544.687l10.715 6.172c1.586.91 2.56 2.6 2.56 4.43v30.663c0 1.82.983 3.5 2.565 4.44l25.164 14.41c.79.47 1.773.47 2.56 0 .776-.45 1.268-1.3 1.268-2.21zm199.868 34.176c0 .457-.243.88-.64 1.106l-14.548 8.386c-.395.227-.883.227-1.277 0l-14.55-8.386c-.4-.227-.64-.65-.64-1.106V107.93c0-.458.24-.88.63-1.11l14.54-8.4c.4-.23.89-.23 1.29 0l14.55 8.4c.4.23.64.652.64 1.11zM298.734.324c-.794-.442-1.76-.43-2.544.027-.78.46-1.262 1.3-1.262 2.21v65c0 .64-.34 1.23-.894 1.55-.55.32-1.235.32-1.79 0L281.634 63c-1.58-.914-3.526-.914-5.112 0l-42.37 24.453c-1.583.91-2.56 2.6-2.56 4.42v48.92c0 1.83.977 3.51 2.56 4.43l42.37 24.47c1.582.91 3.53.91 5.117 0l42.37-24.48c1.58-.92 2.56-2.6 2.56-4.43V18.863c0-1.856-1.01-3.563-2.63-4.47zm141.093 107.164c1.574-.914 2.543-2.602 2.543-4.422V91.21c0-1.824-.97-3.507-2.547-4.425l-42.1-24.44c-1.59-.92-3.54-.92-5.13 0l-42.36 24.45c-1.59.92-2.56 2.6-2.56 4.43v48.9c0 1.84.99 3.54 2.58 4.45l42.09 23.99c1.55.89 3.45.9 5.02.03l25.46-14.15c.8-.45 1.31-1.3 1.31-2.22 0-.92-.49-1.78-1.29-2.23l-42.62-24.46c-.8-.45-1.29-1.3-1.29-2.21v-15.34c0-.916.48-1.76 1.28-2.216l13.26-7.65c.79-.46 1.76-.46 2.55 0l13.27 7.65c.79.45 1.28 1.3 1.28 2.21v12.06c0 .91.49 1.76 1.28 2.22.79.45 1.77.45 2.56-.01zm0 0"/><path fill="#689f63" fill-rule="evenodd" d="M394.538 105.2c.3-.177.676-.177.98 0l8.13 4.69c.304.176.49.5.49.85v9.39c0 .35-.186.674-.49.85l-8.13 4.69c-.304.177-.68.177-.98 0l-8.125-4.69c-.31-.176-.5-.5-.5-.85v-9.39c0-.35.18-.674.49-.85zm0 0"/><g clip-path="url(#a)" transform="translate(-78.306 -164.016)"><path fill="url(#b)" d="M331.363 246.793l-118.715-58.19-60.87 124.174L270.49 370.97zm0 0"/></g><g clip-path="url(#c)" transform="translate(-78.306 -164.016)"><path fill="url(#d)" d="M144.07 264.004l83.825 113.453 110.86-81.906-83.83-113.45zm0 0"/></g><g clip-path="url(#e)" transform="translate(-78.306 -164.016)"><path fill="url(#f)" d="M197.02 225.934v107.43h91.683v-107.43zm0 0"/></g></svg>
+                        <p class="text-center text-base mt-2">Node JS</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32" data-tilt data-tilt-max="30">
+                        <svg
+                            class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0 dark:bg-dakitih"
+                            xmlns:dc="http://purl.org/dc/elements/1.1/"
+                            xmlns:cc="http://creativecommons.org/ns#"
+                            xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+                            xmlns:svg="http://www.w3.org/2000/svg"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+                            xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+                            id="Express"
+                            viewBox="0 0 120 60"
+                            version="1.1"
+                            sodipodi:docname="expressjs-ar21.svg"
+                            width="120"
+                            height="60"
+                            inkscape:version="0.92.2 (5c3e80d, 2017-08-06)">
+                            <metadata
+                            id="metadata24">
+                            <rdf:RDF>
+                            <cc:Work
+                                rdf:about="">
+                            <dc:format>image/svg+xml</dc:format>
+                            <dc:type
+                                rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+                            <dc:title>Artboard 12</dc:title>
+                            </cc:Work>
+                            </rdf:RDF>
+                            </metadata>
+                            <defs
+                            id="defs22" />
+                            <sodipodi:namedview
+                            pagecolor="#ffffff"
+                            bordercolor="#666666"
+                            borderopacity="1"
+                            objecttolerance="10"
+                            gridtolerance="10"
+                            guidetolerance="10"
+                            inkscape:pageopacity="0"
+                            inkscape:pageshadow="2"
+                            inkscape:window-width="1920"
+                            inkscape:window-height="1001"
+                            id="namedview20"
+                            showgrid="false"
+                            inkscape:zoom="1.84375"
+                            inkscape:cx="-2.1694915"
+                            inkscape:cy="64"
+                            inkscape:window-x="-9"
+                            inkscape:window-y="-9"
+                            inkscape:window-maximized="1"
+                            inkscape:current-layer="Express" />
+                            <title
+                            id="title2">Artboard 12</title>
+                            <g
+                            id="original-wordmark"
+                            transform="matrix(0.85101532,0,0,0.85101532,5.5198422,-24.472693)">
+                            <path
+                            d="M 40.53,77.82 V 50.74 H 42 V 55 a 5.57,5.57 0 0 0 0.48,-0.6 7.28,7.28 0 0 1 6.64,-4.12 c 3.35,-0.1 6.07,1.14 7.67,4.12 a 13.24,13.24 0 0 1 0.32,12.14 c -1.49,3.34 -5.17,5 -9.11,4.39 A 7.37,7.37 0 0 1 42.12,67.05 V 77.82 Z M 42,60.32 c 0.13,1.32 0.18,2.26 0.33,3.18 0.58,3.62 2.72,5.77 6.08,6.16 A 6.91,6.91 0 0 0 56,65.27 11.77,11.77 0 0 0 55.74,55.59 6.77,6.77 0 0 0 48.61,51.65 6.59,6.59 0 0 0 42.72,56.52 33.4,33.4 0 0 0 42,60.32 Z"
+                            id="path4"
+                            inkscape:connector-curvature="0" />
+                            <path
+                            d="m 88.41,64 a 7.92,7.92 0 0 1 -7.74,7 c -6.16,0.31 -9.05,-3.78 -9.51,-8.5 a 13.62,13.62 0 0 1 1.2,-7.5 8.37,8.37 0 0 1 8.71,-4.67 8,8 0 0 1 7.1,6.09 41.09,41.09 0 0 1 0.69,4.5 H 72.67 c -0.3,4.28 2,7.72 5.26,8.55 4.06,1 7.53,-0.76 8.79,-4.62 C 87,63.86 87.51,63.72 88.41,64 Z M 72.67,59.55 h 14.47 c -0.09,-4.56 -2.93,-7.86 -6.78,-7.91 -4.36,-0.07 -7.5,3.11 -7.69,7.91 z"
+                            id="path6"
+                            inkscape:connector-curvature="0" />
+                            <path
+                            d="m 91.39,64.1 h 1.42 a 5.69,5.69 0 0 0 3.34,4.9 8.73,8.73 0 0 0 7.58,-0.2 3.41,3.41 0 0 0 2,-3.35 3.09,3.09 0 0 0 -2.08,-3.09 c -1.56,-0.58 -3.22,-0.9 -4.81,-1.41 A 35.25,35.25 0 0 1 94,59.18 c -2.56,-1.25 -2.72,-6.12 0.18,-7.66 a 10.21,10.21 0 0 1 9.76,-0.15 5.14,5.14 0 0 1 2.6,5.24 h -1.22 c 0,-0.06 -0.11,-0.11 -0.11,-0.17 -0.15,-3.89 -3.41,-5.09 -6.91,-4.75 a 9.17,9.17 0 0 0 -3,0.91 3,3 0 0 0 -1.74,3 3,3 0 0 0 2,2.82 c 1.54,0.56 3.15,0.92 4.73,1.36 1.27,0.35 2.59,0.58 3.82,1 a 4.51,4.51 0 0 1 3.1,4.07 4.81,4.81 0 0 1 -2.59,5 c -3.34,1.89 -8.84,1.39 -11.29,-1 A 6.67,6.67 0 0 1 91.39,64.1 Z"
+                            id="path8"
+                            inkscape:connector-curvature="0" />
+                            <path
+                            d="m 125.21,56.61 h -1.33 c 0,-0.18 -0.07,-0.34 -0.09,-0.49 a 4.35,4.35 0 0 0 -3.54,-4.18 8.73,8.73 0 0 0 -5.61,0.27 3.41,3.41 0 0 0 -2.47,3.25 3.14,3.14 0 0 0 2.4,3.16 c 2,0.62 4.05,1 6.08,1.56 a 17,17 0 0 1 1.94,0.59 5,5 0 0 1 0.27,9.31 11.13,11.13 0 0 1 -9,0.09 6.24,6.24 0 0 1 -3.76,-6.06 h 0.56 0.74 a 7.29,7.29 0 0 0 11.1,4.64 3.57,3.57 0 0 0 1.92,-3.34 3.09,3.09 0 0 0 -2.11,-3.07 c -1.56,-0.58 -3.22,-0.89 -4.81,-1.4 a 35.43,35.43 0 0 1 -4.87,-1.75 c -2.5,-1.23 -2.7,-6.06 0.15,-7.6 a 10.07,10.07 0 0 1 9.92,-0.11 5.23,5.23 0 0 1 2.51,5.13 z"
+                            id="path10"
+                            inkscape:connector-curvature="0" />
+                            <path
+                            d="M 38.1,70.51 A 2.29,2.29 0 0 1 35.26,69.43 C 33.63,66.99 31.83,64.66 30.1,62.28 l -0.75,-1 c -2.06,2.76 -4.12,5.41 -6,8.16 a 2.2,2.2 0 0 1 -2.7,1.06 l 7.73,-10.37 -7.19,-9.37 a 2.39,2.39 0 0 1 2.85,1 c 1.67,2.44 3.52,4.77 5.36,7.24 1.85,-2.45 3.68,-4.79 5.39,-7.21 a 2.15,2.15 0 0 1 2.68,-1 l -2.79,3.7 c -1.25,1.65 -2.48,3.31 -3.78,4.92 a 1,1 0 0 0 0,1.49 c 2.39,3.17 4.76,6.35 7.2,9.61 z"
+                            id="path12"
+                            inkscape:connector-curvature="0" />
+                            <path
+                            d="m 70.92,50.66 v 1.4 a 7.25,7.25 0 0 0 -7.72,7.49 q 0,4.94 0,9.88 c 0,0.35 0,0.7 0,1.12 H 61.77 V 50.74 h 1.4 v 4.06 c 1.73,-2.96 4.4,-4.06 7.75,-4.14 z"
+                            id="path14"
+                            inkscape:connector-curvature="0" />
+                            <path
+                            d="m 2.13,60 c 0.21,-1 0.34,-2.09 0.63,-3.11 1.73,-6.15 8.78,-8.71 13.63,-4.9 2.84,2.23 3.55,5.39 3.41,8.95 H 3.8 C 3.54,67.3 8.13,71.14 14,69.18 a 6.09,6.09 0 0 0 3.87,-4.31 c 0.31,-1 0.81,-1.17 1.76,-0.88 A 8.12,8.12 0 0 1 15.75,69.92 9.4,9.4 0 0 1 4.8,68.52 9.85,9.85 0 0 1 2.34,62.74 c 0,-0.34 -0.13,-0.68 -0.2,-1 Q 2.13,60.85 2.13,60 Z M 3.82,59.57 H 18.29 C 18.2,54.96 15.29,51.69 11.41,51.66 7.09,51.6 4,54.8 3.81,59.55 Z"
+                            id="path16"
+                            inkscape:connector-curvature="0" />
+                            </g>
+                            </svg>
+                        <p class="text-center text-base mt-2">Express JS</p>
+                    </div>
+                    <div class="flex items-center justify-center flex-col w-32 h-32"  data-tilt data-tilt-max="30">
+                        <svg class="draggable align-middle w-20 h-20 inline-block text-xs shrink-0
+                        dark:bg-dakitih" width="207px" height="124px" viewBox="0 0 207 124" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <!-- Generator: Sketch 51.2 (57519) - http://www.bohemiancoding.com/sketch -->
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="Black-Next.js" transform="translate(-247.000000, -138.000000)" fill="#000000" fill-rule="nonzero">
+                                    <g id="next-black" transform="translate(247.000000, 138.000000)">
+                                        <g id="EXT-+-Type-something">
+                                            <path d="M48.9421964,32.6320058 L87.9011585,32.6320058 L87.9011585,35.7136421 L52.5134345,35.7136421 L52.5134345,58.9070103 L85.7908813,58.9070103 L85.7908813,61.9886466 L52.5134345,61.9886466 L52.5134345,87.4526941 L88.306981,87.4526941 L88.306981,90.5343303 L48.9421964,90.5343303 L48.9421964,32.6320058 Z M91.3912326,32.6320058 L95.5306221,32.6320058 L113.8738,58.0960534 L132.622801,32.6320058 L158.124498,0.286809811 L116.22757,60.7722112 L137.817329,90.5343303 L133.51561,90.5343303 L113.8738,63.4483691 L94.1508254,90.5343303 L89.9302715,90.5343303 L111.682358,60.7722112 L91.3912326,32.6320058 Z M139.359455,35.713642 L139.359455,32.6320058 L183.756439,32.6320058 L183.756439,35.7136421 L163.302983,35.7136421 L163.302983,90.5343303 L159.731745,90.5343303 L159.731745,35.7136421 L139.359455,35.713642 Z" id="EXT"></path>
+                                            <polygon id="Type-something" points="0.202923647 32.6320058 4.66697141 32.6320058 66.2235778 124.303087 40.785176 90.5343303 3.93649086 37.0111732 3.77416185 90.5343303 0.202923647 90.5343303"></polygon>
+                                        </g>
+                                        <path d="M183.396622,86.5227221 C184.134938,86.5227221 184.673474,85.9601075 184.673474,85.233037 C184.673474,84.5059658 184.134938,83.9433513 183.396622,83.9433513 C182.666993,83.9433513 182.11977,84.5059658 182.11977,85.233037 C182.11977,85.9601075 182.666993,86.5227221 183.396622,86.5227221 Z M186.905793,83.1297235 C186.905793,85.2763149 188.460599,86.678523 190.727662,86.678523 C193.142388,86.678523 194.601647,85.233037 194.601647,82.7229099 L194.601647,73.8855335 L192.655968,73.8855335 L192.655968,82.7142542 C192.655968,84.1078073 191.952397,84.8521899 190.710289,84.8521899 C189.598473,84.8521899 188.842785,84.1597409 188.816727,83.1297235 L186.905793,83.1297235 Z M197.146664,83.0172011 C197.285642,85.2503478 199.153145,86.678523 201.932686,86.678523 C204.903321,86.678523 206.762139,85.1811034 206.762139,82.792155 C206.762139,80.9138876 205.702439,79.8752151 203.131364,79.2779777 L201.750279,78.9404092 C200.117298,78.5595622 199.457158,78.0488813 199.457158,77.1573541 C199.457158,76.0321243 200.482113,75.296398 202.019547,75.296398 C203.478806,75.296398 204.48639,76.0148135 204.668797,77.1660091 L206.562359,77.1660091 C206.44944,75.0626962 204.590622,73.5825873 202.045605,73.5825873 C199.309495,73.5825873 197.48542,75.0626962 197.48542,77.2871878 C197.48542,79.1221767 198.519063,80.2127835 200.786126,80.7407758 L202.401734,81.1302779 C204.060773,81.5197807 204.790402,82.091051 204.790402,83.0431676 C204.790402,84.1510859 203.643842,84.9560573 202.08035,84.9560573 C200.403939,84.9560573 199.240006,84.2030196 199.074971,83.0172011 L197.146664,83.0172011 Z" id=".JS"></path>
+                                    </g>
                                 </g>
                             </g>
-                        </g>
-                    </svg>
-                    <p class="text-center text-base mt-2">Next JS</p>
-                </div>
-                
-            </div>
-
-        </div>
-
-        <div class="mt-32 px-16 ml-5 mr-5">
-            <h1 class="text-3xl font-medium text-center
-            md:text-4xl
-            dark:text-blue-400" id="Projects">Projects</h1>
-            <div class="flex justify-center items-center gap-x-3 mb-8 mt-16 ">
-
-                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item active-work dark:text-dakitih" data-filter="all">All</span>
-
-                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item dark:text-dakitih"data-filter=".Back_end">Back End</span>
-
-                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item dark:text-dakitih"data-filter=".Front_end">Front End</span>
-
-                <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item dark:text-dakitih"data-filter=".UIUX">UI/UX</span>
-
-            </div>
-
-            <div class="pt-4 gap-12 grid grid-cols-3 work__container ">
-
-                <div class="bg-white  p-4 rounded-2xl mix Back_end shadow-card work__card
-                dark:bg-dakibu dark:text-dakitih">
-                    <img src="src/img/work1.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
-
-                    <h3 class="text-lg font-medium mb-1 work__name">Back End</h3>
-
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
-                        Demo <i class="bx bx-right-arrow-alt text-base duration-300
-                        group-hover:translate-x-1"></i>
-                    </a>
-                </div>
-
-                <div class="bg-white p-4 rounded-2xl mix Front_end shadow-card work__card
-                dark:bg-dakibu dark:text-dakitih">
-                    <img src="src/img/work2.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
-
-                    <h3 class="text-lg font-medium mb-1 work__name">Front End</h3>
-
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
-                        Demo <i class="bx bx-right-arrow-alt text-base duration-300
-                        group-hover:translate-x-1"></i>
-                    </a>
-                </div>
-
-                <div class="bg-white p-4 rounded-2xl mix UIUX shadow-card work__card
-                dark:bg-dakibu dark:text-dakitih">
-                    <img src="src/img/work3.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
-
-                    <h3 class="text-lg font-medium mb-1 work__name">UI/UX</h3>
-
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
-                        Demo <i class="bx bx-right-arrow-alt text-base duration-300
-                        group-hover:translate-x-1"></i>
-                    </a>
-                </div>
-
-                <div class="bg-white p-4 rounded-2xl mix Back_end shadow-card work__card
-                dark:bg-dakibu dark:text-dakitih">
-                    <img src="src/img/work4.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
-
-                    <h3 class="text-lg font-medium mb-1 work__name">Back End</h3>
-
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
-                        Demo <i class="bx bx-right-arrow-alt text-base duration-300
-                        group-hover:translate-x-1"></i>
-                    </a>
-                </div>
-
-                <div class="bg-white p-4 rounded-2xl mix Front_end shadow-card work__card
-                dark:bg-dakibu dark:text-dakitih">
-                    <img src="src/img/work5.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
-
-                    <h3 class="text-lg font-medium mb-1 work__name">Front End</h3>
-
-                    <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group ">
-                        Demo <i class="bx bx-right-arrow-alt text-base duration-300
-                        hover:translate-x-1"></i>
-                    </a>
-                </div>
-
-            </div>
-
-            
-            
-        </div>
-        
-        <div class="mt-32 px-16 ml-16 mr-16">
-            <h1 class="text-3xl font-medium text-center
-            md:text-4xl
-            dark:text-blue-400" id="Contact">Contact</h1>
-
-            <div class="grid gap-y-12 pb-12 grid-cols-2 justify-center gap-x-12 mt-12">
-                
-                <div class="contact__content dark:text-dakitih">
-                    <h1 class="text-center text-lg mb-6 font-medium">Talk To Me</h1>
-
-                    <div class="grid gap-4 justify-center contact__info">
-
-                        <div class="shadow-card p-4 rounded-xl text-center mt-8 
-                                    dark:bg-dakibu">
-                            <i class="bx bx-mail-send text-3xl text-black dark:text-dakitih"></i>
-                            <h3 class="text-sm font-medium">Email</h3>
-                            <span class="text-sm block mb-3">madereihan26@gmail.com</span>
-
-                            <a href="#" target="_blank" class="text-blue-500 font-normal flex items-center content-center gap-x-1 group">Write Me <i class="bx bx-right-arrow-alt text-base duration-300  group-hover:translate-x-1"></i></a>
-                        </div>
-
-                        <div class="shadow-card p-4 rounded-xl text-center mt-8 dark:bg-dakibu">
-                            <i class="bx bx-mail-send text-3xl text-black dark:text-dakitih"></i>
-                            <h3 class="text-sm font-medium">WhatsApp</h3>
-                            <span class="text-sm block mb-3">012345678</span>
-
-                            <a href="#" target="_blank" class="text-blue-500 font-normal flex items-center content-center gap-x-1 group">Write Me <i class="bx bx-right-arrow-alt text-base duration-300 group-hover:translate-x-1"></i></a>
-                        </div>
-
+                        </svg>
+                        <p class="text-center text-base mt-2">Next JS</p>
                     </div>
-
+                    
                 </div>
-
-                <div class="contact__content dark:text-dakitih">
-
-                    <h1 class="text-center text-lg mb-6 font-medium">Write Me Your project</h1>
-
-                    <form  class="w-80 my-0 mx-auto " onsubmit="sendEmail(); reset(); return false;">
-                        <div class="relative mb-8 h-16">
-                            <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10 dark:bg-dakitam">Name</label>
-                            <input type="text" placeholder="Insert Your Name" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl dark:bg-dakitam" style="z-index: 1;" id="name">
-                        </div>
-                        <div class="relative mb-8 h-16">
-                            <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10 dark:bg-dakitam">Email</label>
-                            <input type="email" placeholder="Insert Your Email" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl dark:bg-dakitam" style="z-index: 1;" id="email" required>
-                        </div>
-                        <div class="relative mb-8 h-44 ">
-                            <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10 dark:bg-dakitam">Message</label>
-                            <textarea name="" id="message" cols="30" rows="10" placeholder="Write your Message" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl dark:bg-dakitam" style="z-index: 1;"></textarea>
-                            
-                        </div>
-                        <button class="font-semibold text-white bg-blue-400 rounded-lg px-5 py-3 mt-3 cursor-pointer border-none outline-none inline-block dark:text-dakitam">Send Messages</button>
-                    </form>
-
-                </div>
-
+    
             </div>
-        </div>
+        </section>
+
+
+        <section id="Projects">
+            <div class="mt-32 px-16 ml-5 mr-5">
+                <h1 class="text-3xl font-medium text-center
+                md:text-4xl
+                dark:text-blue-400">Projects</h1>
+                <div class="flex justify-center items-center gap-x-3 mb-8 mt-16 ">
+    
+                    <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item active-work dark:text-dakitih" data-filter="all">All</span>
+    
+                    <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item dark:text-dakitih"data-filter=".Back_end">Back End</span>
+    
+                    <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item dark:text-dakitih"data-filter=".Front_end">Front End</span>
+    
+                    <span class="cursor-pointer text-black py-1 px-3 font-medium rounded-lg work__item dark:text-dakitih"data-filter=".UIUX">UI/UX</span>
+    
+                </div>
+    
+                <div class="pt-4 gap-12 grid grid-cols-1 work__container
+                            md:grid-cols-2
+                            lg:grid-cols-3">
+    
+                    <div class="bg-white  p-4 rounded-2xl mix Back_end shadow-card work__card
+                    dark:bg-dakibu dark:text-dakitih">
+                        <img src="src/img/work1.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
+    
+                        <h3 class="text-lg font-medium mb-1 work__name">Back End</h3>
+    
+                        <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
+                            Demo <i class="bx bx-right-arrow-alt text-base duration-300
+                            group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+    
+                    <div class="bg-white p-4 rounded-2xl mix Front_end shadow-card work__card
+                    dark:bg-dakibu dark:text-dakitih">
+                        <img src="src/img/work2.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
+    
+                        <h3 class="text-lg font-medium mb-1 work__name">Front End</h3>
+    
+                        <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
+                            Demo <i class="bx bx-right-arrow-alt text-base duration-300
+                            group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+    
+                    <div class="bg-white p-4 rounded-2xl mix UIUX shadow-card work__card
+                    dark:bg-dakibu dark:text-dakitih">
+                        <img src="src/img/work3.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
+    
+                        <h3 class="text-lg font-medium mb-1 work__name">UI/UX</h3>
+    
+                        <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
+                            Demo <i class="bx bx-right-arrow-alt text-base duration-300
+                            group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+    
+                    <div class="bg-white p-4 rounded-2xl mix Back_end shadow-card work__card
+                    dark:bg-dakibu dark:text-dakitih">
+                        <img src="src/img/work4.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
+    
+                        <h3 class="text-lg font-medium mb-1 work__name">Back End</h3>
+    
+                        <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group">
+                            Demo <i class="bx bx-right-arrow-alt text-base duration-300
+                            group-hover:translate-x-1"></i>
+                        </a>
+                    </div>
+    
+                    <div class="bg-white p-4 rounded-2xl mix Front_end shadow-card work__card
+                    dark:bg-dakibu dark:text-dakitih">
+                        <img src="src/img/work5.jpg" alt="" class="rounded-2xl mb-3 w-96 work__img">
+    
+                        <h3 class="text-lg font-medium mb-1 work__name">Front End</h3>
+    
+                        <a href="#" class="w-max text-blue-400 text-sm flex items-center gap-x-1 work__demo group ">
+                            Demo <i class="bx bx-right-arrow-alt text-base duration-300
+                            hover:translate-x-1"></i>
+                        </a>
+                    </div>
+    
+                </div>
+                
+            </div>
+        </section>
+        
+        <section id="Contact">
+            <div class="mt-32 px-16 ml-16 mr-16">
+                <h1 class="text-3xl font-medium text-center
+                md:text-4xl
+                dark:text-blue-400" >Contact</h1>
+    
+                <div class="grid gap-y-12 pb-12 grid-cols-1 justify-center gap-x-12 mt-12
+                            lg:grid-cols-2">
+                    
+                    <div class="contact__content dark:text-dakitih">
+                        <h1 class="text-center text-lg mb-6 font-medium">Talk To Me</h1>
+    
+                        <div class="grid gap-4 justify-center contact__info">
+    
+                            <div class="shadow-card p-4 rounded-xl text-center mt-8 
+                                        dark:bg-dakibu">
+                                <i class="bx bx-mail-send text-3xl text-black dark:text-dakitih"></i>
+                                <h3 class="text-sm font-medium">Email</h3>
+                                <span class="text-sm block mb-3">reihanmade@gmail.com</span>
+    
+                                <a href="https://mail.google.com/mail/u/1/#inbox?compose=GTvVlcSHxjdJQrhhzlgXVZnrCDJPRLqhSkMjvszGvfQfpKZNTvMzjXfZKCjLljlVwjHXZVmXSxMXv" target="_blank" class="text-blue-500 font-normal flex items-center content-center gap-x-1 group">Write Me <i class="bx bx-right-arrow-alt text-base duration-300  group-hover:translate-x-1"></i></a>
+                            </div>
+    
+                            <div class="shadow-card p-4 rounded-xl text-center mt-8 dark:bg-dakibu">
+                                <i class="bx bxl-whatsapp text-3xl text-black dark:text-dakitih"></i>
+                                <h3 class="text-sm font-medium">WhatsApp</h3>
+    
+                                <a href="https://wa.me/6287785416840" target="_blank" class="text-blue-500 font-normal flex items-center content-center gap-x-1 group">Write Me <i class="bx bx-right-arrow-alt text-base duration-300 group-hover:translate-x-1"></i></a>
+                            </div>
+    
+                        </div>
+    
+                    </div>
+    
+                    <div class="contact__content dark:text-dakitih text-center lg:text-left">
+    
+                        <h1 class="text-center text-lg mb-6 font-medium">Write Me Your project</h1>
+    
+                        <form  class="w-80 my-0 mx-auto " onsubmit="sendEmail(); reset(); return false;">
+                            <div class="relative mb-8 h-16">
+                                <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10 dark:bg-dakitam">Name</label>
+                                <input type="text" placeholder="Insert Your Name" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl dark:bg-dakitam dark:text-dakitih" style="z-index: 1;" id="name">
+                            </div>
+                            <div class="relative mb-8 h-16">
+                                <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10 dark:bg-dakitam">Email</label>
+                                <input type="email" placeholder="Insert Your Email" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl dark:bg-dakitam dark:text-dakitih" style="z-index: 1;" id="email" required>
+                            </div>
+                            <div class="relative mb-8 h-44 ">
+                                <label for="" class="absolute -top-3 left-5 text-sm p-1 bg-white z-10 dark:bg-dakitam">Message</label>
+                                <textarea name="" id="message" cols="30" rows="10" placeholder="Write your Message" class="absolute top-0 left-0 w-full h-full border-2 border-solid border-gray-600 bg-none text-black outline-none p-6 rounded-xl dark:bg-dakitam dark:text-dakitih" style="z-index: 1;"></textarea>
+                                
+                            </div>
+                            <button class="font-semibold text-white bg-blue-400 rounded-lg px-5 py-3 mt-3 cursor-pointer border-none outline-none inline-block dark:text-dakitam">Send Messages</button>
+                        </form>
+    
+                    </div>
+    
+                </div>
+            </div>
+        </section>
 
         <footer class="bg-blue-400">
 
@@ -649,7 +665,7 @@
                         <a href="#AboutMe" class="text-black text-xl font-medium">About Me</a>
                     </li>
                     <li>
-                        <a href="#Skills" class="text-black text-xl font-medium">Skills</a>
+                        <a href="#MySkills" class="text-black text-xl font-medium">Skills</a>
                     </li>
                     <li>
                         <a href="#Projects" class="text-black text-xl font-medium">Projects</a>
@@ -657,7 +673,7 @@
                 </ul>
 
                 <ul class="flex justify-center gap-10 mt-20">
-                    <a href="" target="_blank" class="bg-black text-blue-300 p-1 rounded-md text-2xl inline-flex">
+                    <a href="https://line.me/ti/p/Pl9QVl5Nju" target="_blank" class="bg-black text-blue-300 p-1 rounded-md text-2xl inline-flex">
                         <i class="fab fa-line"></i>
                     </a>
 
@@ -677,8 +693,13 @@
     <script src="src/js/mixitup.min.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./src/js/index.js"></script>
     <script>
+    AOS.init();
+
+
     function Menu(e){
         let list = document.querySelector('ul');
         e.name === 'menu' ? (e.name = "close",list.classList.add('top-[80px]') , list.classList.add('opacity-100')) :( e.name = "menu" ,list.classList.remove('top-[80px]'),list.classList.remove('opacity-100'))

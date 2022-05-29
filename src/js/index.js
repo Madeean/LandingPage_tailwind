@@ -132,6 +132,7 @@ function sendEmail(){
     Body : `Name: ${document.getElementById("name").value} <br>
             Email: ${document.getElementById("email").value} <br>
             Message: ${document.getElementById("message").value}`
+
   }).then(
     message => Toastify({
       text: `${message} Message Terikirim`,

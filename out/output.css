@@ -527,16 +527,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1.5rem;
 }
 
-.my-0 {
-  margin-top: 0px;
-  margin-bottom: 0px;
-}
-
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .ml-12 {
   margin-left: 3rem;
 }
@@ -685,10 +675,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 100%;
 }
 
-.w-4\/6 {
-  width: 66.666667%;
-}
-
 .w-9\/12 {
   width: 75%;
 }
@@ -715,8 +701,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 2.5rem;
 }
 
-.w-80 {
-  width: 20rem;
+.w-8 {
+  width: 2rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.w-6 {
+  width: 1.5rem;
 }
 
 .shrink-0 {
@@ -1092,12 +1086,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
 }
 
+html{
+  overflow-x: hidden;
+}
+
 .header{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 2;
+  z-index: 100;
 }
 
 .scroll-header-light{
@@ -1185,6 +1183,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(192 132 252 / var(--tw-border-opacity));
 }
 
+.hover\:bg-blue-600:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(37 99 235 / var(--tw-bg-opacity));
+}
+
 .hover\:pb-2:hover {
   padding-bottom: 0.5rem;
 }
@@ -1260,10 +1263,6 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: auto;
   }
 
-  .md\:grid-cols-3 {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -1325,6 +1324,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .lg\:col-start-2 {
     grid-column-start: 2;
+  }
+
+  .lg\:w-full {
+    width: 100%;
+  }
+
+  .lg\:w-80 {
+    width: 20rem;
   }
 
   .lg\:grid-cols-4 {

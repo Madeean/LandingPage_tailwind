@@ -121,30 +121,47 @@ VanillaTilt.init(document.querySelectorAll(".work__card"), {
 
 
 // smtp
-function sendEmail(){
-  Email.send({
-    Host : "smtp.mailtrap.io",
-    Username : "04ccf795e33725",
-    Password : "a96b8f6bd127ea",
-    To : 'madereihan26@gmail.com',
-    From : `${document.getElementById("email").value}`,
-    Subject : "new value from contact form portfolio website",
-    Body : `Name: ${document.getElementById("name").value} <br>
-            Email: ${document.getElementById("email").value} <br>
-            Message: ${document.getElementById("message").value}`
 
-  }).then(
-    message => Toastify({
-      text: `${message} Message Terikirim`,
-      duration: 2000,
-      className: "success",
-      style: {
-        background: "linear-gradient(to right, #00b09b, #96c93d)",
-      },
-    }).showToast()
-  );
-}
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbzis-rbXtnURi5SoV8kERdQNXWw9CaJWeVnK-4H82UHZuH5Lsr_qZPTZZ77d30AfEIO/exec'
+  const form = document.forms['FormPortfolio']
+  const btnKirim = document.querySelector('.btn-kirim')
+  const btnloading = document.querySelector('.btn-loading')
 
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    btnKirim.classList.toggle('hidden')
+    btnloading.classList.toggle('hidden')
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then((response) => {
+
+        btnloading.classList.toggle('hidden')
+        btnKirim.classList.toggle('hidden')
+        Toastify({
+          text: `Message Terikirim`,
+          duration: 2000,
+          className: "success",
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+        }).showToast()
+        form.reset()
+      })
+      .catch((response)=>{
+        btnloading.classList.toggle('hidden')
+        btnKirim.classList.toggle('hidden')
+        Toastify({
+          text: `Message Terikirim`,
+          duration: 2000,
+          className: "success",
+          style: {
+            background: "linear-gradient(to right, #00b09b, #96c93d)",
+          },
+        }).showToast()
+        form.reset()
+      })
+  })
+
+  
 // SCROLL SECTIONS ACTIVE LINK
 
 const sections = document.querySelectorAll('section[id]')
